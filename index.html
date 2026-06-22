@@ -7,17 +7,17 @@
   <!-- ══ PRIMARY SEO ══ -->
   <title>Goyo Senior School | Academic Excellence in Homa Bay County, Kenya</title>
   <meta name="description" content="Goyo Senior School is a co-educational public day school in Homa Bay County offering CBC Grade 10 and 8-4-4 (Form 3–4) education. Excellence since 2015. Apply for admissions today." />
-  <meta name="keywords" content="Goyo Senior School, Homa Bay secondary school, CBC Grade 10, KCSE Form 4, Homa Bay County school, Kenya senior school, admissions 2027" />
+  <meta name="keywords" content="Goyo Senior School, Homa Bay secondary school, CBC Grade 10, KCSE Form 4, Homa Bay County school, Kenya senior school, admissions 2027, tenders Homa Bay school" />
   <meta name="author" content="Goyo Senior School" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.goyomixed.sc.ke/" />
 
-  <!-- ══ OPEN GRAPH (Facebook / WhatsApp shares) ══ -->
+  <!-- ══ OPEN GRAPH ══ -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.goyomixed.sc.ke/" />
   <meta property="og:title" content="Goyo Senior School – Excellence in Homa Bay County" />
   <meta property="og:description" content="Co-educational public day school offering CBC Grade 10 and KCSE Form 3–4. 350+ students, 20 qualified teachers. Apply for 2027 admissions." />
-  <meta property="og:image" content="https://www.goyomixed.sc.ke/assets/og-image.jpg" />
+  <meta property="og:image" content="school-gate.jpg" />
   <meta property="og:locale" content="en_KE" />
   <meta property="og:site_name" content="Goyo Senior School" />
 
@@ -25,14 +25,15 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Goyo Senior School – Excellence in Homa Bay County" />
   <meta name="twitter:description" content="Co-educational public day school offering CBC Grade 10 and KCSE Form 3–4." />
+  <meta name="twitter:image" content="school-gate.jpg" />
 
-  <!-- ══ SECURITY META HEADERS ══ -->
+  <!-- ══ SECURITY META ══ -->
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
 
-  <!-- ══ SCHEMA.ORG STRUCTURED DATA ══ -->
+  <!-- ══ SCHEMA.ORG ══ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,17 +41,18 @@
     "name": "Goyo Senior School",
     "alternateName": "Goyo Mixed Secondary School",
     "url": "https://www.goyomixed.sc.ke",
-    "logo": "https://www.goyomixed.sc.ke/assets/logo.png",
+    "logo": "logo.jpg",
+    "image": "school-gate.jpg",
     "description": "Co-educational public day school in Homa Bay County offering CBC Grade 10 and KCSE Form 3–4 curriculum.",
     "foundingDate": "2015",
-    "telephone": "+254712345678",
+    "telephone": "+254718812493",
     "email": "info@goyomixed.sc.ke",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Off Homa Bay–Mbita Superhighway, Goyo Estate, Kanyamwa",
       "addressLocality": "Homa Bay",
       "addressRegion": "Homa Bay County",
-      "postalCode": "00232",
+      "postalCode": "40300",
       "addressCountry": "KE"
     },
     "geo": {
@@ -75,10 +77,6 @@
   <style>
     /* ═══════════════════════════════════════════
        DESIGN TOKENS
-       Palette: deep navy #0B2A3C | sky teal #1A7FAD
-                sky blue #4FB8D8 | mist #E8F6FB
-                gold #F0A500 | white #FFFFFF
-       Type: Playfair Display (display) · DM Sans (body)
     ═══════════════════════════════════════════ */
     :root {
       --navy:     #0B2A3C;
@@ -98,11 +96,10 @@
       --radius-lg: 1.75rem;
       --shadow-sm: 0 2px 8px rgba(11,42,60,0.07);
       --shadow:    0 8px 30px rgba(11,42,60,0.12);
-      --shadow-lg: 0 20px 60px rgba(11,42,60,0.16);
+      --shadow-lg: 0 20px 60px rgba(11,42,60,0.18);
       --transition: 0.22s ease;
     }
 
-    /* ── RESET ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
     body {
@@ -117,19 +114,13 @@
     ul { list-style: none; }
     button { cursor: pointer; font-family: inherit; }
 
-    /* ── SKIP LINK (Accessibility) ── */
+    /* ── SKIP LINK ── */
     .skip-link {
-      position: absolute;
-      top: -100%;
-      left: 1rem;
-      background: var(--gold);
-      color: var(--navy);
-      font-weight: 700;
-      padding: 0.6rem 1.25rem;
+      position: absolute; top: -100%; left: 1rem;
+      background: var(--gold); color: var(--navy);
+      font-weight: 700; padding: 0.6rem 1.25rem;
       border-radius: 0 0 var(--radius-sm) var(--radius-sm);
-      z-index: 9999;
-      font-size: 0.9rem;
-      transition: top 0.2s;
+      z-index: 9999; font-size: 0.9rem; transition: top 0.2s;
     }
     .skip-link:focus { top: 0; }
 
@@ -139,52 +130,40 @@
     .text-teal  { color: var(--teal); }
     .text-gold  { color: var(--gold); }
 
-    /* ═══════════════════════════════════════════
-       TOP STRIP
-    ═══════════════════════════════════════════ */
+    /* ═══ TOP STRIP ═══ */
     .top-strip {
       background: var(--navy);
       color: var(--sky-lt);
-      font-size: 0.8rem;
-      font-weight: 500;
-      padding: 0.5rem 0;
+      font-size: 0.8rem; font-weight: 500; padding: 0.5rem 0;
     }
-    .top-strip .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
+    .top-strip .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
     .top-strip a { color: var(--sky-lt); transition: color var(--transition); }
     .top-strip a:hover, .top-strip a:focus { color: var(--gold); outline: none; }
     .ts-left, .ts-right { display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; }
     .ts-left i, .ts-right i { margin-right: 0.3rem; }
     .ts-sep { color: rgba(255,255,255,0.2); }
 
-    /* ═══════════════════════════════════════════
-       NAVBAR
-    ═══════════════════════════════════════════ */
+    /* ═══ NAVBAR ═══ */
     .navbar {
-      background: rgba(255,255,255,0.98);
+      background: rgba(255,255,255,0.97);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(79,184,216,0.18);
-      position: sticky;
-      top: 0;
-      z-index: 200;
+      position: sticky; top: 0; z-index: 200;
       box-shadow: 0 2px 20px rgba(11,42,60,0.07);
     }
     .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.8rem 1.5rem;
-      max-width: 1200px;
-      margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.65rem 1.5rem; max-width: 1200px; margin: 0 auto;
     }
-    .logo         { display: flex; align-items: center; gap: 0.85rem; }
-    .logo-badge   {
+    .logo { display: flex; align-items: center; gap: 0.75rem; }
+    .logo-img {
+      width: 46px; height: 46px; border-radius: 10px;
+      object-fit: cover; object-position: center;
+      box-shadow: 0 4px 14px rgba(26,127,173,0.3);
+      flex-shrink: 0;
+    }
+    .logo-badge {
       width: 46px; height: 46px;
       background: linear-gradient(140deg, var(--sky), var(--teal));
       border-radius: 12px;
@@ -192,117 +171,92 @@
       font-size: 1.4rem; color: white;
       box-shadow: 0 4px 14px rgba(26,127,173,0.3);
       flex-shrink: 0;
-      aria-hidden: true;
     }
     .logo-words strong { display: block; font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--navy); line-height: 1.1; letter-spacing: -0.01em; }
     .logo-words span   { font-size: 0.68rem; color: var(--teal); font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; }
 
-    .nav-links   { display: flex; gap: 0.15rem; align-items: center; }
+    .nav-links { display: flex; gap: 0.1rem; align-items: center; }
     .nav-links a {
-      padding: 0.45rem 0.8rem;
-      border-radius: var(--radius-sm);
-      font-weight: 600;
-      font-size: 0.87rem;
-      color: var(--gray-700);
+      padding: 0.4rem 0.75rem; border-radius: var(--radius-sm);
+      font-weight: 600; font-size: 0.84rem; color: var(--gray-700);
       transition: all var(--transition);
     }
-    .nav-links a:hover,
-    .nav-links a:focus,
-    .nav-links a[aria-current="page"] { background: var(--mist); color: var(--teal); outline: none; }
-
+    .nav-links a:hover, .nav-links a:focus, .nav-links a[aria-current="page"] { background: var(--mist); color: var(--teal); outline: none; }
     .nav-cta {
-      background: var(--navy) !important;
-      color: white !important;
-      padding: 0.5rem 1.2rem !important;
-      border-radius: 40px !important;
-      font-weight: 700 !important;
-      margin-left: 0.35rem;
+      background: var(--navy) !important; color: white !important;
+      padding: 0.45rem 1.1rem !important; border-radius: 40px !important;
+      font-weight: 700 !important; margin-left: 0.25rem;
     }
     .nav-cta:hover, .nav-cta:focus { background: var(--teal) !important; }
 
     .hamburger {
-      display: none;
-      background: none;
-      border: 2px solid transparent;
-      border-radius: var(--radius-sm);
-      color: var(--navy);
-      font-size: 1.4rem;
-      padding: 0.3rem 0.4rem;
+      display: none; background: none;
+      border: 2px solid transparent; border-radius: var(--radius-sm);
+      color: var(--navy); font-size: 1.4rem; padding: 0.3rem 0.4rem;
       transition: border-color var(--transition);
     }
     .hamburger:focus { border-color: var(--teal); outline: none; }
 
-    /* ═══════════════════════════════════════════
-       HERO
-    ═══════════════════════════════════════════ */
+    /* ═══ HERO ═══ */
     .hero {
-      background: linear-gradient(155deg, #07202E 0%, #113A54 50%, #1A7FAD 100%);
-      color: white;
-      padding: 5rem 0 4rem;
-      position: relative;
-      overflow: hidden;
+      position: relative; min-height: 100svh;
+      display: flex; align-items: center;
+      color: white; overflow: hidden;
     }
-    .hero::before {
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+    }
+    .hero-bg img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center 30%;
+      display: block;
+    }
+    /* Layered dark gradient overlay for readability */
+    .hero-bg::after {
       content: '';
-      position: absolute;
-      width: 700px; height: 700px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(79,184,216,0.1) 0%, transparent 65%);
-      top: -250px; right: -200px;
-      pointer-events: none;
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(7,32,46,0.88) 0%,
+        rgba(11,42,60,0.82) 40%,
+        rgba(26,127,173,0.55) 100%
+      );
     }
-    .hero::after {
+    /* Radial glow accents */
+    .hero-bg::before {
       content: '';
-      position: absolute;
-      width: 400px; height: 400px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(240,165,0,0.07) 0%, transparent 70%);
-      bottom: -150px; left: 5%;
-      pointer-events: none;
+      position: absolute; inset: 0; z-index: 1;
+      background:
+        radial-gradient(ellipse 60% 60% at 80% 20%, rgba(79,184,216,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 10% 90%, rgba(240,165,0,0.08) 0%, transparent 70%);
     }
+    .hero > .container { position: relative; z-index: 1; padding: 5rem 1.5rem; width: 100%; }
     .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3.5rem;
-      align-items: center;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 3.5rem; align-items: center;
     }
     .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: rgba(79,184,216,0.14);
-      border: 1px solid rgba(79,184,216,0.28);
-      color: var(--sky-lt);
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.35rem 1rem;
-      border-radius: 40px;
-      margin-bottom: 1.25rem;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(79,184,216,0.16); border: 1px solid rgba(79,184,216,0.3);
+      color: var(--sky-lt); font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.35rem 1rem; border-radius: 40px; margin-bottom: 1.25rem;
     }
     .hero h1 {
       font-family: 'Playfair Display', serif;
       font-size: clamp(2rem, 4.5vw, 3.3rem);
-      font-weight: 900;
-      line-height: 1.1;
-      margin-bottom: 1.25rem;
-      letter-spacing: -0.02em;
+      font-weight: 900; line-height: 1.1;
+      margin-bottom: 1.25rem; letter-spacing: -0.02em;
     }
     .hero h1 em { font-style: normal; color: var(--sky); }
     .hero-motto {
       display: inline-block;
-      background: rgba(240,165,0,0.18);
-      border-left: 3px solid var(--gold);
-      color: var(--gold-lt);
-      font-style: italic;
-      font-size: 0.92rem;
-      padding: 0.5rem 1rem;
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      margin-bottom: 1.1rem;
-      font-weight: 500;
+      background: rgba(240,165,0,0.18); border-left: 3px solid var(--gold);
+      color: var(--gold-lt); font-style: italic; font-size: 0.92rem;
+      padding: 0.5rem 1rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin-bottom: 1.1rem; font-weight: 500;
     }
-    .hero-lead { font-size: 1rem; opacity: 0.85; max-width: 430px; margin-bottom: 2rem; line-height: 1.7; }
+    .hero-lead { font-size: 1rem; opacity: 0.87; max-width: 440px; margin-bottom: 2rem; line-height: 1.7; }
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
 
     .btn-primary {
@@ -310,8 +264,7 @@
       background: var(--gold); color: var(--navy);
       font-weight: 700; font-size: 0.92rem;
       padding: 0.75rem 1.6rem; border-radius: 40px;
-      transition: all var(--transition);
-      border: 2px solid transparent;
+      transition: all var(--transition); border: 2px solid transparent;
     }
     .btn-primary:hover, .btn-primary:focus { background: #d99600; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(240,165,0,0.35); outline: none; }
     .btn-outline {
@@ -319,43 +272,41 @@
       background: transparent; color: white;
       font-weight: 600; font-size: 0.92rem;
       padding: 0.75rem 1.6rem; border-radius: 40px;
-      border: 2px solid rgba(255,255,255,0.32);
-      transition: all var(--transition);
+      border: 2px solid rgba(255,255,255,0.35); transition: all var(--transition);
     }
-    .btn-outline:hover, .btn-outline:focus { border-color: white; background: rgba(255,255,255,0.08); outline: none; }
+    .btn-outline:hover, .btn-outline:focus { border-color: white; background: rgba(255,255,255,0.1); outline: none; }
 
     .hero-stats {
       display: flex; gap: 2rem; flex-wrap: wrap;
       margin-top: 2.5rem; padding-top: 2rem;
-      border-top: 1px solid rgba(255,255,255,0.1);
+      border-top: 1px solid rgba(255,255,255,0.12);
     }
     .hero-stat-num   { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 900; color: var(--sky); line-height: 1; }
     .hero-stat-label { font-size: 0.72rem; color: rgba(255,255,255,0.55); font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; margin-top: 0.2rem; }
 
-    /* Right cards */
+    /* Hero right cards */
     .hero-card-stack { display: flex; flex-direction: column; gap: 1rem; }
     .info-card {
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.11);
-      backdrop-filter: blur(12px);
+      background: rgba(11,42,60,0.65);
+      border: 1px solid rgba(255,255,255,0.13);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       border-radius: var(--radius-lg);
       padding: 1.4rem 1.5rem;
       transition: transform var(--transition), background var(--transition);
     }
-    .info-card:hover { transform: translateX(-4px); background: rgba(255,255,255,0.1); }
+    .info-card:hover { transform: translateX(-4px); background: rgba(11,42,60,0.75); }
     .info-card-head  { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.7rem; }
     .info-card-icon  { width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; flex-shrink: 0; }
-    .ic-gold { background: rgba(240,165,0,0.2); color: var(--gold); }
-    .ic-sky  { background: rgba(79,184,216,0.2); color: var(--sky); }
-    .ic-teal { background: rgba(26,127,173,0.2); color: var(--sky-lt); }
+    .ic-gold { background: rgba(240,165,0,0.22); color: var(--gold); }
+    .ic-sky  { background: rgba(79,184,216,0.22); color: var(--sky); }
+    .ic-teal { background: rgba(26,127,173,0.22); color: var(--sky-lt); }
     .info-card h4 { font-size: 0.92rem; font-weight: 700; color: white; }
-    .info-card p  { font-size: 0.8rem; color: rgba(255,255,255,0.65); line-height: 1.5; }
+    .info-card p  { font-size: 0.8rem; color: rgba(255,255,255,0.7); line-height: 1.5; }
     .info-card a  { color: var(--sky); font-weight: 600; font-size: 0.8rem; }
     .info-card a:hover { color: var(--gold-lt); }
 
-    /* ═══════════════════════════════════════════
-       TICKER
-    ═══════════════════════════════════════════ */
+    /* ═══ TICKER ═══ */
     .ticker-wrap { background: var(--navy); padding: 0.7rem 0; overflow: hidden; position: relative; }
     .ticker-label {
       background: var(--gold); color: var(--navy);
@@ -370,14 +321,12 @@
       animation: ticker 38s linear infinite;
       padding-left: 155px; white-space: nowrap;
     }
-    .ticker-track:hover { animation-play-state: paused; cursor: default; }
+    .ticker-track:hover { animation-play-state: paused; }
     @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
     .ticker-item { font-size: 0.83rem; color: rgba(255,255,255,0.88); display: flex; align-items: center; gap: 0.5rem; }
     .ticker-item i { color: var(--gold); font-size: 0.55rem; }
 
-    /* ═══════════════════════════════════════════
-       QUICK BAR
-    ═══════════════════════════════════════════ */
+    /* ═══ QUICK BAR ═══ */
     .quick-bar { background: var(--mist); border-bottom: 1px solid rgba(79,184,216,0.18); padding: 1.1rem 0; }
     .quick-bar-inner { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; }
     .qlink {
@@ -391,55 +340,41 @@
     .qlink:hover, .qlink:focus { background: var(--teal); color: white; border-color: var(--teal); outline: none; }
     .qlink:hover i, .qlink:focus i { color: white; }
 
-    /* ═══════════════════════════════════════════
-       SHARED SECTION STYLES
-    ═══════════════════════════════════════════ */
+    /* ═══ SHARED SECTION STYLES ═══ */
     section { padding: 5rem 0; }
     .section-label {
-      display: inline-block;
-      font-size: 0.7rem; font-weight: 700;
+      display: inline-block; font-size: 0.7rem; font-weight: 700;
       letter-spacing: 0.13em; text-transform: uppercase;
       color: var(--teal); margin-bottom: 0.5rem;
     }
     .section-title {
       font-family: 'Playfair Display', serif;
       font-size: clamp(1.7rem, 3vw, 2.4rem);
-      font-weight: 900; color: var(--navy);
-      line-height: 1.15; margin-bottom: 1rem;
+      font-weight: 900; color: var(--navy); line-height: 1.15; margin-bottom: 1rem;
     }
     .section-lead { color: var(--gray-700); max-width: 560px; font-size: 0.97rem; line-height: 1.7; }
 
-    /* ═══════════════════════════════════════════
-       PRINCIPAL'S MESSAGE
-    ═══════════════════════════════════════════ */
+    /* ═══ PRINCIPAL'S MESSAGE ═══ */
     #principal { background: var(--gray-50); }
     .principal-grid {
-      display: grid;
-      grid-template-columns: 260px 1fr;
-      gap: 3.5rem;
-      align-items: start;
+      display: grid; grid-template-columns: 280px 1fr;
+      gap: 3.5rem; align-items: start;
     }
     .principal-portrait {
-      background: linear-gradient(135deg, #d3eef8, #b8e0f0);
       border-radius: var(--radius-lg);
-      aspect-ratio: 3/4;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
-      color: var(--teal);
-      box-shadow: var(--shadow);
-      position: relative;
       overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      position: relative;
     }
-    .principal-portrait i { font-size: 4rem; opacity: 0.5; }
+    .principal-portrait img {
+      width: 100%; aspect-ratio: 3/4;
+      object-fit: cover; object-position: center top;
+      display: block;
+    }
     .principal-portrait figcaption {
-      text-align: center;
-      padding: 1.5rem 1rem;
+      text-align: center; padding: 1rem 1rem 1.2rem;
       background: white;
-      width: 100%;
-      border-top: 1px solid rgba(79,184,216,0.15);
+      border-top: 3px solid var(--teal);
     }
     .principal-portrait figcaption strong { display: block; font-weight: 700; color: var(--navy); font-size: 0.9rem; }
     .principal-portrait figcaption span { font-size: 0.78rem; color: var(--teal); }
@@ -448,7 +383,7 @@
       width: 52px; height: 52px; border-radius: 50%;
       border: 3px solid var(--teal);
       display: flex; flex-direction: column; align-items: center; justify-content: center;
-      background: rgba(255,255,255,0.9);
+      background: rgba(255,255,255,0.92);
       font-size: 0.38rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
       color: var(--teal); text-align: center; line-height: 1.3;
     }
@@ -458,36 +393,24 @@
       background: var(--gold-lt);
       padding: 1.25rem 1.5rem;
       border-radius: 0 var(--radius) var(--radius) 0;
-      margin: 1.5rem 0;
-      font-size: 1rem;
-      font-style: italic;
-      color: var(--navy);
-      line-height: 1.7;
+      margin: 1.5rem 0; font-size: 1rem;
+      font-style: italic; color: var(--navy); line-height: 1.7;
     }
     .principal-message p { color: var(--gray-700); font-size: 0.95rem; line-height: 1.75; margin-bottom: 1rem; }
     .principal-sig { display: flex; flex-direction: column; gap: 0.2rem; margin-top: 1.5rem; }
     .principal-sig strong { font-size: 1rem; color: var(--navy); }
     .principal-sig span   { font-size: 0.82rem; color: var(--teal); }
 
-    /* ═══════════════════════════════════════════
-       ABOUT / VISION / MISSION
-    ═══════════════════════════════════════════ */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
+    /* ═══ ABOUT ═══ */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
     .about-visual { position: relative; }
-    .about-img-placeholder {
+    .about-img-main {
       width: 100%; aspect-ratio: 4/3;
-      background: linear-gradient(135deg, #e4f4fb, #c2e7f2);
+      object-fit: cover; object-position: center;
       border-radius: var(--radius-lg);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 4.5rem; color: var(--sky);
-      box-shadow: var(--shadow-lg); overflow: hidden; position: relative;
+      box-shadow: var(--shadow-lg);
+      display: block;
     }
-    .about-img-placeholder i { opacity: 0.3; }
     .about-floating-badge {
       position: absolute; bottom: -1rem; right: -1rem;
       background: var(--gold); color: var(--navy);
@@ -496,22 +419,16 @@
       box-shadow: var(--shadow); text-align: center; line-height: 1.3;
     }
     .about-floating-badge strong { display: block; font-size: 1.5rem; font-family: 'Playfair Display', serif; }
-
-    .vmv-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-top: 1.75rem; }
-    .vmv-card {
-      background: var(--mist); border-radius: var(--radius);
-      padding: 1.25rem; border-top: 3px solid var(--teal);
-    }
+    .vmv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.75rem; }
+    .vmv-card { background: var(--mist); border-radius: var(--radius); padding: 1.25rem; border-top: 3px solid var(--teal); }
     .vmv-card.gold { border-top-color: var(--gold); }
-    .vmv-card.navy { border-top-color: var(--navy); }
+    .vmv-card.navy { border-top-color: var(--navy); grid-column: 1/-1; }
     .vmv-card h5 { font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 0.5rem; color: var(--teal); }
     .vmv-card.gold h5 { color: var(--gold); }
     .vmv-card.navy h5 { color: var(--navy); }
     .vmv-card p { font-size: 0.83rem; color: var(--gray-700); line-height: 1.6; }
 
-    /* ═══════════════════════════════════════════
-       LEADERSHIP
-    ═══════════════════════════════════════════ */
+    /* ═══ LEADERSHIP ═══ */
     #leadership { background: var(--gray-50); }
     .leadership-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
     .leader-card {
@@ -525,24 +442,21 @@
       background: linear-gradient(135deg, var(--mist), var(--sky-lt));
       display: flex; align-items: center; justify-content: center;
       margin: 0 auto 0.85rem; font-size: 1.6rem; color: var(--teal);
-      border: 3px solid rgba(79,184,216,0.25);
+      border: 3px solid rgba(79,184,216,0.25); overflow: hidden;
     }
+    .leader-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
     .leader-card h4 { font-weight: 700; font-size: 0.9rem; margin-bottom: 0.2rem; }
     .leader-card .role { font-size: 0.77rem; color: var(--teal); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
     .leader-card .quals { font-size: 0.78rem; color: var(--gray-400); margin-top: 0.3rem; }
 
-    /* ═══════════════════════════════════════════
-       ACADEMICS – CBC & 8-4-4
-    ═══════════════════════════════════════════ */
+    /* ═══ ACADEMICS ═══ */
     .curriculum-tabs { margin-top: 2rem; }
     .tab-buttons { display: flex; gap: 0; border-bottom: 2px solid var(--gray-100); margin-bottom: 2rem; }
     .tab-btn {
       background: none; border: none;
-      padding: 0.85rem 1.5rem;
-      font-size: 0.88rem; font-weight: 700;
+      padding: 0.85rem 1.5rem; font-size: 0.88rem; font-weight: 700;
       color: var(--gray-400); cursor: pointer;
-      border-bottom: 3px solid transparent;
-      margin-bottom: -2px;
+      border-bottom: 3px solid transparent; margin-bottom: -2px;
       transition: all var(--transition);
     }
     .tab-btn:hover { color: var(--teal); }
@@ -550,12 +464,10 @@
     .tab-btn:focus { outline: 2px solid var(--teal); outline-offset: 2px; }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
-
     .pathway-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
     .pathway-card {
       border: 2px solid var(--gray-100); border-radius: var(--radius-lg);
-      padding: 1.5rem; background: white;
-      transition: all var(--transition);
+      padding: 1.5rem; background: white; transition: all var(--transition);
     }
     .pathway-card:hover { border-color: var(--teal); box-shadow: var(--shadow); }
     .pathway-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--mist); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: var(--teal); margin-bottom: 1rem; transition: all var(--transition); }
@@ -564,29 +476,23 @@
     .pathway-card p  { font-size: 0.8rem; color: var(--gray-700); line-height: 1.55; }
     .pathway-subjects { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.35rem; }
     .subj-tag { background: var(--mist); color: var(--teal); font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 3px; }
-
     .cbc-info {
       display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
-      background: var(--mist); border-radius: var(--radius-lg);
-      padding: 2rem; margin-top: 1.5rem;
+      background: var(--mist); border-radius: var(--radius-lg); padding: 2rem; margin-top: 1.5rem;
     }
     .cbc-info h5 { font-weight: 700; font-size: 0.9rem; color: var(--navy); margin-bottom: 0.5rem; }
-    .cbc-info ul  { padding-left: 0; }
-    .cbc-info ul li { font-size: 0.83rem; color: var(--gray-700); padding: 0.2rem 0; padding-left: 1.1rem; position: relative; }
+    .cbc-info ul { padding-left: 0; }
+    .cbc-info ul li { font-size: 0.83rem; color: var(--gray-700); padding: 0.2rem 0 0.2rem 1.1rem; position: relative; }
     .cbc-info ul li::before { content: '✓'; position: absolute; left: 0; color: var(--teal); font-weight: 700; font-size: 0.75rem; top: 0.22rem; }
-
     .transition-notice {
       background: var(--gold-lt); border: 1px solid rgba(240,165,0,0.4);
       border-left: 4px solid var(--gold); border-radius: 0 var(--radius) var(--radius) 0;
       padding: 1.1rem 1.5rem; margin-top: 1.5rem;
       font-size: 0.88rem; color: var(--navy); line-height: 1.6;
     }
-    .transition-notice strong { color: var(--navy); }
     .transition-notice i { color: var(--gold); margin-right: 0.4rem; }
 
-    /* ═══════════════════════════════════════════
-       DEPARTMENTS
-    ═══════════════════════════════════════════ */
+    /* ═══ DEPARTMENTS ═══ */
     #departments { background: var(--gray-50); }
     .depts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
     .dept-card {
@@ -605,9 +511,7 @@
     .dept-card h4 { font-weight: 700; font-size: 0.88rem; margin-bottom: 0.3rem; }
     .dept-card p  { font-size: 0.77rem; color: var(--gray-400); line-height: 1.5; }
 
-    /* ═══════════════════════════════════════════
-       ADMISSIONS
-    ═══════════════════════════════════════════ */
+    /* ═══ ADMISSIONS ═══ */
     .admissions-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 2rem; }
     .admission-card { background: white; border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-sm); border: 1px solid var(--gray-100); }
     .admission-card h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 1rem; color: var(--navy); }
@@ -626,19 +530,15 @@
     .dl-link:hover, .dl-link:focus { border-color: var(--teal); background: var(--mist); color: var(--teal); outline: none; }
     .dl-link span { margin-left: auto; font-size: 0.72rem; color: var(--gray-400); font-weight: 500; }
 
-    /* ═══════════════════════════════════════════
-       STUDENT LIFE
-    ═══════════════════════════════════════════ */
+    /* ═══ STUDENT LIFE ═══ */
     #student-life { background: var(--navy); color: white; }
     #student-life .section-title { color: white; }
     #student-life .section-lead { color: rgba(255,255,255,0.65); }
     #student-life .section-label { color: var(--sky); }
     .life-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
     .life-card {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: var(--radius-lg); padding: 1.5rem;
-      transition: all var(--transition);
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition);
     }
     .life-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-4px); }
     .life-icon { width: 46px; height: 46px; border-radius: 11px; background: rgba(79,184,216,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; color: var(--sky); margin-bottom: 0.9rem; }
@@ -648,8 +548,144 @@
     .club-tag { background: rgba(79,184,216,0.15); color: var(--sky-lt); font-size: 0.72rem; font-weight: 600; padding: 0.2rem 0.65rem; border-radius: 3px; }
 
     /* ═══════════════════════════════════════════
-       ACADEMIC CALENDAR
+       GALLERY
     ═══════════════════════════════════════════ */
+    #gallery { background: var(--navy); overflow: hidden; }
+    #gallery .section-label { color: var(--sky); }
+    #gallery .section-title { color: white; }
+    #gallery .section-lead  { color: rgba(255,255,255,0.65); }
+
+    /* Auto-scrolling strip */
+    .gallery-strip-wrap {
+      margin-top: 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .gallery-strip-wrap::before,
+    .gallery-strip-wrap::after {
+      content: '';
+      position: absolute; top: 0; bottom: 0; z-index: 2; width: 80px;
+      pointer-events: none;
+    }
+    .gallery-strip-wrap::before { left: 0; background: linear-gradient(to right, var(--navy), transparent); }
+    .gallery-strip-wrap::after  { right: 0; background: linear-gradient(to left,  var(--navy), transparent); }
+
+    .gallery-strip {
+      display: flex; gap: 1rem;
+      animation: galleryScroll 32s linear infinite;
+      width: max-content;
+    }
+    .gallery-strip:hover { animation-play-state: paused; }
+    @keyframes galleryScroll {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    .gallery-strip-item {
+      flex-shrink: 0;
+      width: 300px; height: 200px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+    }
+    @media (max-width: 600px) {
+      .gallery-strip-item { width: 220px; height: 150px; }
+    }
+    .gallery-strip-item img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      transition: transform 0.5s ease;
+      display: block;
+    }
+    .gallery-strip-item:hover img { transform: scale(1.07); }
+    .gallery-strip-item .gallery-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(11,42,60,0.7) 0%, transparent 55%);
+      opacity: 0; transition: opacity 0.3s;
+      display: flex; align-items: flex-end; padding: 0.75rem;
+    }
+    .gallery-strip-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay span {
+      color: white; font-size: 0.75rem; font-weight: 600;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+
+    /* Gallery grid below strip */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem; margin-top: 1.5rem;
+    }
+    .gallery-grid-item {
+      border-radius: var(--radius);
+      overflow: hidden; cursor: pointer; position: relative;
+      aspect-ratio: 4/3;
+      border: 2px solid rgba(255,255,255,0.06);
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .gallery-grid-item:hover { border-color: var(--sky); transform: translateY(-3px); }
+    .gallery-grid-item img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      display: block; transition: transform 0.45s ease;
+    }
+    .gallery-grid-item:hover img { transform: scale(1.06); }
+    .gallery-grid-item .gallery-caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(to top, rgba(11,42,60,0.85), transparent);
+      padding: 1rem 0.85rem 0.7rem;
+      color: white; font-size: 0.78rem; font-weight: 600;
+      opacity: 0; transition: opacity 0.3s;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    }
+    .gallery-grid-item:hover .gallery-caption { opacity: 1; }
+
+    /* Gallery lightbox */
+    .lightbox {
+      display: none; position: fixed; inset: 0; z-index: 1000;
+      background: rgba(7,20,30,0.95);
+      align-items: center; justify-content: center;
+      padding: 1rem;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox-inner {
+      position: relative; max-width: 900px; width: 100%;
+      display: flex; flex-direction: column; align-items: center; gap: 1rem;
+    }
+    .lightbox-img {
+      max-height: 80vh; max-width: 100%;
+      object-fit: contain; border-radius: var(--radius);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+      display: block;
+    }
+    .lightbox-caption {
+      color: rgba(255,255,255,0.7); font-size: 0.85rem; text-align: center;
+    }
+    .lightbox-close {
+      position: absolute; top: -2.5rem; right: 0;
+      background: rgba(255,255,255,0.12); border: none;
+      color: white; width: 38px; height: 38px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; cursor: pointer; transition: background 0.2s;
+    }
+    .lightbox-close:hover { background: var(--teal); }
+    .lightbox-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(255,255,255,0.1); border: none; color: white;
+      width: 44px; height: 44px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; cursor: pointer; transition: background 0.2s;
+    }
+    .lightbox-nav:hover { background: var(--teal); }
+    .lightbox-prev { left: -3.5rem; }
+    .lightbox-next { right: -3.5rem; }
+    @media (max-width: 700px) {
+      .lightbox-prev { left: -0.5rem; }
+      .lightbox-next { right: -0.5rem; }
+    }
+
+    /* ═══ CALENDAR ═══ */
     .cal-table-wrap { background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); margin-top: 2rem; }
     .cal-table { width: 100%; border-collapse: collapse; }
     .cal-table thead th { background: var(--navy); color: white; padding: 1rem 1.25rem; text-align: left; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
@@ -663,9 +699,7 @@
     .cal-note { margin-top: 1rem; background: var(--gold-lt); border-left: 4px solid var(--gold); padding: 0.75rem 1rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-size: 0.82rem; color: var(--gray-700); }
     .cal-note i { color: var(--gold); margin-right: 0.4rem; }
 
-    /* ═══════════════════════════════════════════
-       FEES
-    ═══════════════════════════════════════════ */
+    /* ═══ FEES ═══ */
     #fees { background: var(--navy); color: white; }
     #fees .section-title { color: white; }
     #fees .section-lead { color: rgba(255,255,255,0.65); }
@@ -683,8 +717,87 @@
     .fees-note { margin-top: 1rem; font-size: 0.79rem; color: rgba(255,255,255,0.45); text-align: center; }
 
     /* ═══════════════════════════════════════════
-       NOTICES
+       TENDERS
     ═══════════════════════════════════════════ */
+    #tenders { background: var(--gray-50); }
+    .tender-header-row {
+      display: flex; align-items: flex-start;
+      justify-content: space-between; gap: 1.5rem;
+      flex-wrap: wrap; margin-bottom: 2rem;
+    }
+    .tender-header-row .section-lead { margin-bottom: 0; }
+    .tender-badge-row {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(240,165,0,0.12); border: 1px solid rgba(240,165,0,0.3);
+      color: #8a6000; font-size: 0.75rem; font-weight: 700;
+      padding: 0.4rem 0.9rem; border-radius: 40px; white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .tender-badge-row i { color: var(--gold); }
+
+    .tenders-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .tender-card {
+      background: white; border: 1px solid var(--gray-100);
+      border-radius: var(--radius-lg); padding: 1.75rem;
+      transition: all var(--transition); position: relative;
+      overflow: hidden;
+    }
+    .tender-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: linear-gradient(to right, var(--teal), var(--sky));
+    }
+    .tender-card.closed::before { background: var(--gray-400); }
+    .tender-card:hover { border-color: var(--sky); box-shadow: var(--shadow); transform: translateY(-3px); }
+    .tender-card.closed:hover { border-color: var(--gray-400); }
+
+    .tender-meta { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.85rem; align-items: center; }
+    .tender-status {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em;
+      padding: 0.22rem 0.75rem; border-radius: 40px;
+    }
+    .tender-status.open   { background: #E6F4EA; color: #2E7D32; }
+    .tender-status.closed { background: var(--gray-100); color: var(--gray-400); }
+    .tender-status.upcoming { background: var(--gold-lt); color: #8a6000; }
+    .tender-status i { font-size: 0.5rem; }
+    .tender-ref { font-size: 0.7rem; font-weight: 600; color: var(--gray-400); }
+
+    .tender-card h4 { font-weight: 700; font-size: 1rem; color: var(--navy); margin-bottom: 0.4rem; line-height: 1.3; }
+    .tender-card p  { font-size: 0.83rem; color: var(--gray-700); line-height: 1.6; margin-bottom: 1rem; }
+    .tender-dates {
+      display: flex; flex-direction: column; gap: 0.3rem;
+      background: var(--gray-50); border-radius: var(--radius-sm);
+      padding: 0.75rem 1rem; margin-bottom: 1rem;
+      font-size: 0.8rem;
+    }
+    .tender-dates .td-row { display: flex; justify-content: space-between; }
+    .tender-dates .td-label { color: var(--gray-400); font-weight: 600; }
+    .tender-dates .td-val   { color: var(--navy); font-weight: 700; }
+    .tender-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .tender-btn {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      padding: 0.5rem 1rem; border-radius: 40px;
+      font-size: 0.8rem; font-weight: 700;
+      transition: all var(--transition);
+    }
+    .tender-btn.primary { background: var(--navy); color: white; }
+    .tender-btn.primary:hover, .tender-btn.primary:focus { background: var(--teal); outline: none; }
+    .tender-btn.secondary { background: white; color: var(--navy); border: 1px solid var(--gray-100); }
+    .tender-btn.secondary:hover, .tender-btn.secondary:focus { border-color: var(--teal); color: var(--teal); outline: none; }
+    .tender-btn.disabled { background: var(--gray-100); color: var(--gray-400); cursor: not-allowed; pointer-events: none; }
+
+    .tender-notice {
+      margin-top: 2rem;
+      background: var(--mist); border: 1px solid rgba(79,184,216,0.25);
+      border-radius: var(--radius); padding: 1.25rem 1.5rem;
+      display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .tender-notice i { color: var(--teal); font-size: 1.25rem; margin-top: 0.1rem; flex-shrink: 0; }
+    .tender-notice p { font-size: 0.85rem; color: var(--gray-700); line-height: 1.65; }
+    .tender-notice a { color: var(--teal); font-weight: 600; }
+    .tender-notice a:hover { color: var(--navy); }
+
+    /* ═══ NOTICES ═══ */
     .notices-list { display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; }
     .notice-card {
       background: white; border: 1px solid var(--gray-100);
@@ -699,9 +812,7 @@
     .notice-body p  { font-size: 0.83rem; color: var(--gray-700); line-height: 1.55; }
     .notice-tag { display: inline-block; background: var(--mist); color: var(--teal); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 0.15rem 0.6rem; border-radius: 3px; margin-bottom: 0.4rem; }
 
-    /* ═══════════════════════════════════════════
-       BELL SCHEDULE
-    ═══════════════════════════════════════════ */
+    /* ═══ BELL SCHEDULE ═══ */
     #bell-schedule { background: var(--gray-50); }
     .bell-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
     .bell-card { background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--gray-100); }
@@ -712,44 +823,25 @@
     .bell-time  { font-weight: 700; color: var(--teal); }
     .bell-label { color: var(--gray-700); }
 
-    /* ═══════════════════════════════════════════
-       CAREERS
-    ═══════════════════════════════════════════ */
+    /* ═══ CAREERS ═══ */
     .jobs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
-    .job-card {
-      background: white; border: 1px solid var(--gray-100);
-      border-radius: var(--radius-lg); padding: 1.5rem;
-      display: flex; flex-direction: column; gap: 0.85rem;
-      transition: all var(--transition);
-    }
+    .job-card { background: white; border: 1px solid var(--gray-100); border-radius: var(--radius-lg); padding: 1.5rem; display: flex; flex-direction: column; gap: 0.85rem; transition: all var(--transition); }
     .job-card:hover { border-color: var(--teal); box-shadow: var(--shadow); }
     .job-badge { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--mist); color: var(--teal); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.22rem 0.7rem; border-radius: 40px; width: fit-content; }
     .job-badge.part { background: var(--gold-lt); color: #8a6000; }
     .job-card h4 { font-weight: 700; font-size: 0.97rem; color: var(--navy); }
     .job-card p  { font-size: 0.82rem; color: var(--gray-700); line-height: 1.55; flex: 1; }
-    .job-apply {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      background: var(--navy); color: white; padding: 0.55rem 1.1rem;
-      border-radius: 40px; font-size: 0.82rem; font-weight: 700;
-      transition: background var(--transition); width: fit-content;
-    }
+    .job-apply { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--navy); color: white; padding: 0.55rem 1.1rem; border-radius: 40px; font-size: 0.82rem; font-weight: 700; transition: background var(--transition); width: fit-content; }
     .job-apply:hover, .job-apply:focus { background: var(--teal); outline: none; }
 
-    /* ═══════════════════════════════════════════
-       CONTACT
-    ═══════════════════════════════════════════ */
+    /* ═══ CONTACT ═══ */
     #contact { background: var(--mist); }
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 2.5rem; }
     .contact-card { background: white; border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow); }
     .contact-card h3 { font-family: 'Playfair Display', serif; font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--navy); }
     .contact-card .lead { font-size: 0.87rem; color: var(--gray-700); margin-bottom: 1.5rem; line-height: 1.65; }
     .contact-actions { display: flex; flex-direction: column; gap: 0.75rem; }
-    .cta-link {
-      display: flex; align-items: center; gap: 0.85rem;
-      padding: 0.9rem 1.2rem; border-radius: var(--radius);
-      font-weight: 600; font-size: 0.88rem;
-      transition: all var(--transition); border: 2px solid transparent;
-    }
+    .cta-link { display: flex; align-items: center; gap: 0.85rem; padding: 0.9rem 1.2rem; border-radius: var(--radius); font-weight: 600; font-size: 0.88rem; transition: all var(--transition); border: 2px solid transparent; }
     .cta-email  { background: var(--navy); color: white; }
     .cta-email:hover, .cta-email:focus  { background: var(--teal); outline: none; }
     .cta-phone  { background: white; color: var(--navy); border-color: var(--gray-100); }
@@ -777,64 +869,29 @@
     .map-placeholder a { font-size: 0.82rem; font-weight: 600; color: var(--teal); text-decoration: underline; }
     .map-placeholder a:hover { color: var(--navy); }
 
-    /* ═══════════════════════════════════════════
-       PRIVACY POLICY (modal)
-    ═══════════════════════════════════════════ */
-    .modal-overlay {
-      display: none; position: fixed; inset: 0;
-      background: rgba(11,42,60,0.75); z-index: 1000;
-      align-items: center; justify-content: center;
-      padding: 1.5rem;
-    }
+    /* ═══ MODALS ═══ */
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(11,42,60,0.75); z-index: 1000; align-items: center; justify-content: center; padding: 1.5rem; }
     .modal-overlay.open { display: flex; }
-    .modal-box {
-      background: white; border-radius: var(--radius-lg);
-      max-width: 680px; width: 100%; max-height: 80vh;
-      overflow-y: auto; padding: 2.5rem;
-      position: relative;
-    }
+    .modal-box { background: white; border-radius: var(--radius-lg); max-width: 680px; width: 100%; max-height: 80vh; overflow-y: auto; padding: 2.5rem; position: relative; }
     .modal-box h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 1rem; color: var(--navy); }
     .modal-box p, .modal-box li { font-size: 0.88rem; color: var(--gray-700); line-height: 1.7; margin-bottom: 0.75rem; }
     .modal-box h4 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin: 1.25rem 0 0.4rem; }
     .modal-box ul { padding-left: 1.25rem; list-style: disc; }
-    .modal-close {
-      position: absolute; top: 1.25rem; right: 1.25rem;
-      background: var(--gray-100); border: none; border-radius: 50%;
-      width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;
-      font-size: 0.9rem; color: var(--navy); cursor: pointer;
-      transition: background var(--transition);
-    }
+    .modal-close { position: absolute; top: 1.25rem; right: 1.25rem; background: var(--gray-100); border: none; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; color: var(--navy); cursor: pointer; transition: background var(--transition); }
     .modal-close:hover, .modal-close:focus { background: var(--teal); color: white; outline: none; }
-    .no-data-badge {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      background: #E6F4EA; color: #2E7D32;
-      font-size: 0.78rem; font-weight: 700; padding: 0.3rem 0.85rem;
-      border-radius: 40px; margin-bottom: 1rem;
-    }
+    .no-data-badge { display: inline-flex; align-items: center; gap: 0.4rem; background: #E6F4EA; color: #2E7D32; font-size: 0.78rem; font-weight: 700; padding: 0.3rem 0.85rem; border-radius: 40px; margin-bottom: 1rem; }
 
-    /* ═══════════════════════════════════════════
-       CTA BANNER
-    ═══════════════════════════════════════════ */
-    .cta-banner {
-      background: linear-gradient(135deg, var(--teal), var(--navy));
-      padding: 3.5rem 0; text-align: center;
-    }
+    /* ═══ CTA BANNER ═══ */
+    .cta-banner { background: linear-gradient(135deg, var(--teal), var(--navy)); padding: 3.5rem 0; text-align: center; }
     .cta-banner h2 { font-family: 'Playfair Display', serif; color: white; font-size: clamp(1.6rem, 3vw, 2.3rem); margin-bottom: 0.75rem; }
     .cta-banner p  { color: rgba(255,255,255,0.7); margin-bottom: 2rem; max-width: 460px; margin-left: auto; margin-right: auto; font-size: 0.95rem; line-height: 1.65; }
     .cta-banner-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
-    /* ═══════════════════════════════════════════
-       FOOTER
-    ═══════════════════════════════════════════ */
+    /* ═══ FOOTER ═══ */
     footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 3.5rem 0 1.5rem; }
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
     .footer-brand p { font-size: 0.82rem; line-height: 1.65; max-width: 250px; margin-top: 1rem; }
-    .footer-motto {
-      display: inline-block; margin-top: 0.85rem;
-      background: rgba(240,165,0,0.15); border: 1px solid rgba(240,165,0,0.3);
-      color: var(--gold); font-size: 0.75rem; font-style: italic; font-weight: 600;
-      padding: 0.35rem 0.85rem; border-radius: 40px;
-    }
+    .footer-motto { display: inline-block; margin-top: 0.85rem; background: rgba(240,165,0,0.15); border: 1px solid rgba(240,165,0,0.3); color: var(--gold); font-size: 0.75rem; font-style: italic; font-weight: 600; padding: 0.35rem 0.85rem; border-radius: 40px; }
     .footer-col h5 { color: white; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 1rem; }
     .footer-col ul { display: flex; flex-direction: column; gap: 0.5rem; }
     .footer-col ul li a { font-size: 0.82rem; transition: color var(--transition); }
@@ -845,13 +902,11 @@
     .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 1.5rem; flex-wrap: wrap; gap: 0.75rem; font-size: 0.76rem; }
     .footer-bottom a { color: var(--sky-lt); }
     .footer-bottom a:hover { color: var(--sky); }
-    .footer-official { display: flex; align-items: center; gap: 0.5rem; }
+    .footer-official { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
     .official-dot { width: 8px; height: 8px; border-radius: 50%; background: #4CAF50; display: inline-block; animation: pulse 2s infinite; }
     @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.4;} }
 
-    /* ═══════════════════════════════════════════
-       SCROLL TO TOP
-    ═══════════════════════════════════════════ */
+    /* ═══ SCROLL TO TOP ═══ */
     #scrollTop {
       position: fixed; bottom: 2rem; right: 2rem;
       width: 42px; height: 42px; border-radius: 50%;
@@ -864,16 +919,16 @@
     #scrollTop.visible { opacity: 1; pointer-events: auto; }
     #scrollTop:hover, #scrollTop:focus { transform: translateY(-3px); background: var(--navy); outline: none; }
 
-    /* ═══════════════════════════════════════════
-       RESPONSIVE
-    ═══════════════════════════════════════════ */
+    /* ═══ RESPONSIVE ═══ */
     @media (max-width: 960px) {
       .hero-grid, .about-grid, .contact-grid, .admissions-grid, .principal-grid { grid-template-columns: 1fr; }
       .hero-card-stack { flex-direction: row; flex-wrap: wrap; }
       .info-card { flex: 1 1 260px; }
-      .vmv-grid { grid-template-columns: 1fr; }
+      .vmv-grid { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
       .cbc-info { grid-template-columns: 1fr; }
+      .lightbox-prev { left: 0.25rem; }
+      .lightbox-next { right: 0.25rem; }
     }
     @media (max-width: 660px) {
       .nav-links {
@@ -886,21 +941,24 @@
       .hamburger { display: block; }
       .footer-grid { grid-template-columns: 1fr; }
       .ts-right { display: none; }
-      .hero { padding: 3rem 0 2.5rem; }
+      .hero > .container { padding: 3.5rem 1.5rem; }
       .hero h1 { font-size: 1.9rem; }
       .hero-stats { gap: 1.25rem; }
-      .cal-table thead th:nth-child(3),
-      .cal-table td:nth-child(3) { display: none; }
+      .cal-table thead th:nth-child(3), .cal-table td:nth-child(3) { display: none; }
       .tab-buttons { overflow-x: auto; }
       .tab-btn { white-space: nowrap; }
       section { padding: 3.5rem 0; }
+      .vmv-grid { grid-template-columns: 1fr; }
+      .tenders-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 400px) {
+      .gallery-grid { grid-template-columns: 1fr; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .ticker-track { animation: none; }
+      .ticker-track, .gallery-strip { animation: none; }
       *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
     }
-
-    /* ── FOCUS VISIBLE (keyboard nav) ── */
     :focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
   </style>
 </head>
@@ -909,33 +967,30 @@
 <!-- SKIP LINK -->
 <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<!-- ════════════════════════════════════
-     TOP STRIP
-════════════════════════════════════ -->
+<!-- ═══════════ TOP STRIP ═══════════ -->
 <div class="top-strip" role="complementary" aria-label="Quick contact information">
   <div class="container">
     <div class="ts-left">
-      <a href="tel:+254712345678" aria-label="Call main office"><i class="fas fa-phone-alt" aria-hidden="true"></i>+254 712 345 678</a>
+      <a href="tel:+254718812493" aria-label="Call main office"><i class="fas fa-phone-alt" aria-hidden="true"></i>+254 718 812 493</a>
       <span class="ts-sep">|</span>
       <a href="mailto:info@goyomixed.sc.ke" aria-label="Email general enquiries"><i class="fas fa-envelope" aria-hidden="true"></i>info@goyomixed.sc.ke</a>
     </div>
     <div class="ts-right">
-      <a href="#careers"><i class="fas fa-briefcase" aria-hidden="true"></i>Careers</a>
+      <a href="#tenders"><i class="fas fa-file-contract" aria-hidden="true"></i>Tenders</a>
       <span class="ts-sep">|</span>
-      <a href="#contact"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Location</a>
+      <a href="#careers"><i class="fas fa-briefcase" aria-hidden="true"></i>Careers</a>
       <span class="ts-sep">|</span>
       <a href="https://wa.me/254718812493?text=Hello%20Goyo%20Senior%20School%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i>WhatsApp</a>
     </div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════
-     NAVBAR
-════════════════════════════════════ -->
+<!-- ═══════════ NAVBAR ═══════════ -->
 <nav class="navbar" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="#home" class="logo" aria-label="Goyo Senior School – Home">
-      <div class="logo-badge" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+      <img src="logo.jpg" alt="Goyo Senior School logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="logo-badge" style="display:none;" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
       <div class="logo-words">
         <strong>GOYO SENIOR</strong>
         <span>School &middot; Homa Bay</span>
@@ -949,8 +1004,9 @@
       <a href="#about" role="menuitem">About</a>
       <a href="#academics" role="menuitem">Academics</a>
       <a href="#admissions" role="menuitem">Admissions</a>
-      <a href="#student-life" role="menuitem">Student Life</a>
+      <a href="#gallery" role="menuitem">Gallery</a>
       <a href="#fees" role="menuitem">Fees</a>
+      <a href="#tenders" role="menuitem">Tenders</a>
       <a href="#notices" role="menuitem">News</a>
       <a href="#contact" role="menuitem">Contact</a>
       <a href="mailto:admissions@goyomixed.sc.ke?subject=Admission%20Enquiry%202027&body=Hello%20Admissions%20Team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20admission.%0A%0AParent%2FGuardian%20Name%3A%0APhone%3A%0AStudent%20Name%3A%0AClass%20applying%20for%3A%0A" class="nav-cta" role="menuitem"><i class="fas fa-user-plus" aria-hidden="true"></i> Apply Now</a>
@@ -958,10 +1014,18 @@
   </div>
 </nav>
 
-<!-- ════════════════════════════════════
-     HERO
-════════════════════════════════════ -->
+<!-- ═══════════ HERO ═══════════ -->
 <header class="hero" id="home" aria-label="Welcome to Goyo Senior School">
+  <!-- Background image -->
+  <div class="hero-bg" aria-hidden="true">
+    <img
+      src="school-gate.jpg"
+      alt=""
+      role="presentation"
+      fetchpriority="high"
+    />
+  </div>
+
   <div class="container">
     <div class="hero-grid">
       <div class="hero-left">
@@ -970,30 +1034,18 @@
         <p class="hero-motto">"Excellence, Integrity, Service"</p>
         <p class="hero-lead">Goyo Senior School is a co-educational public day school dedicated to academic excellence, character development, and preparing students for university and beyond — offering both CBC (Grade 10) and 8-4-4 (Form 3–4) curricula.</p>
         <div class="hero-actions">
-          <a href="mailto:admissions@goyomixed.sc.ke?subject=Admission%20Enquiry%202027&body=Hello%20Admissions%20Team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20admission%20for%202027.%0A%0AParent%2FGuardian%20Name%3A%0APhone%3A%0AStudent%20Name%3A%0AClass%3A%0AKCPE%20Score%20(if%20applicable)%3A%0A%0AThank%20you." class="btn-primary" aria-label="Apply for admission via email">
+          <a href="mailto:admissions@goyomixed.sc.ke?subject=Admission%20Enquiry%202027" class="btn-primary">
             <i class="fas fa-envelope" aria-hidden="true"></i> Apply for Admission
           </a>
-          <a href="#about" class="btn-outline" aria-label="Learn more about the school">
+          <a href="#about" class="btn-outline">
             <i class="fas fa-arrow-down" aria-hidden="true"></i> Discover the School
           </a>
         </div>
         <div class="hero-stats" aria-label="School key statistics">
-          <div class="hero-stat">
-            <div class="hero-stat-num">350+</div>
-            <div class="hero-stat-label">Students Enrolled</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-num">20</div>
-            <div class="hero-stat-label">Qualified Teachers</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-num">76%</div>
-            <div class="hero-stat-label">KCSE Pass Rate</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-num">10+</div>
-            <div class="hero-stat-label">Years of Excellence</div>
-          </div>
+          <div class="hero-stat"><div class="hero-stat-num">350+</div><div class="hero-stat-label">Students Enrolled</div></div>
+          <div class="hero-stat"><div class="hero-stat-num">20</div><div class="hero-stat-label">Qualified Teachers</div></div>
+          <div class="hero-stat"><div class="hero-stat-num">76%</div><div class="hero-stat-label">KCSE Pass Rate</div></div>
+          <div class="hero-stat"><div class="hero-stat-num">10+</div><div class="hero-stat-label">Years of Excellence</div></div>
         </div>
       </div>
       <div class="hero-right" aria-label="Quick school information">
@@ -1001,30 +1053,21 @@
           <div class="info-card">
             <div class="info-card-head">
               <div class="info-card-icon ic-gold"><i class="fas fa-user-tie" aria-hidden="true"></i></div>
-              <div>
-                <h4>Principal's Office</h4>
-                <p>Mr. Wellingtone Ngesa &mdash; Senior Principal</p>
-              </div>
+              <div><h4>Principal's Office</h4><p>Mr. Wellingtone Ngesa &mdash; Senior Principal</p></div>
             </div>
-            <p>Open door: Mon–Fri, 9am–12pm &nbsp;&bull;&nbsp; <a href="tel:+254712345678">+254 712 345 678</a></p>
+            <p>Open door: Mon–Fri, 9am–12pm &nbsp;&bull;&nbsp; <a href="tel:+254718812493">+254 718 812 493</a></p>
           </div>
           <div class="info-card">
             <div class="info-card-head">
               <div class="info-card-icon ic-sky"><i class="fas fa-clock" aria-hidden="true"></i></div>
-              <div>
-                <h4>School Hours</h4>
-                <p>Day Scholar Program</p>
-              </div>
+              <div><h4>School Hours</h4><p>Day Scholar Program</p></div>
             </div>
             <p>Mon–Fri: 7:15am – 4:15pm &nbsp;|&nbsp; Wed early close: 2:30pm &nbsp;|&nbsp; Sat: Academic clinics (alternate weeks)</p>
           </div>
           <div class="info-card">
             <div class="info-card-head">
               <div class="info-card-icon ic-teal"><i class="fas fa-tshirt" aria-hidden="true"></i></div>
-              <div>
-                <h4>Official Uniform</h4>
-                <p>Sky Blue &amp; Navy</p>
-              </div>
+              <div><h4>Official Uniform</h4><p>Sky Blue &amp; Navy</p></div>
             </div>
             <p>Full uniform required daily. <a href="mailto:info@goyomixed.sc.ke?subject=Uniform%20Enquiry">Request uniform guide →</a></p>
           </div>
@@ -1034,10 +1077,8 @@
   </div>
 </header>
 
-<!-- ════════════════════════════════════
-     TICKER
-════════════════════════════════════ -->
-<div class="ticker-wrap" aria-label="School announcements ticker" role="marquee" aria-live="off">
+<!-- ═══════════ TICKER ═══════════ -->
+<div class="ticker-wrap" aria-label="School announcements" role="marquee" aria-live="off">
   <div class="ticker-label" aria-hidden="true"><i class="fas fa-bullhorn"></i> Notices</div>
   <div class="ticker-track" id="tickerTrack">
     <span class="ticker-item"><i class="fas fa-circle" aria-hidden="true"></i> Mid-Term Break: 20th – 23rd June 2026 &nbsp;&mdash;&nbsp;</span>
@@ -1045,11 +1086,12 @@
     <span class="ticker-item"><i class="fas fa-circle" aria-hidden="true"></i> Sky Blue Uniform Parade – 25th June 2026 &nbsp;&mdash;&nbsp;</span>
     <span class="ticker-item"><i class="fas fa-circle" aria-hidden="true"></i> KCSE Mock Exams: 15th–26th September 2026 &nbsp;&mdash;&nbsp;</span>
     <span class="ticker-item"><i class="fas fa-circle" aria-hidden="true"></i> Sports Day: 30th August 2026 at Goyo Grounds &nbsp;&mdash;&nbsp;</span>
+    <span class="ticker-item"><i class="fas fa-circle" aria-hidden="true"></i> Tender GSS/T/001/2026 – Supply of Laboratory Equipment – Closing 15th July 2026 &nbsp;&mdash;&nbsp;</span>
     <span class="ticker-item"><i class="fas fa-circle" aria-hidden="true"></i> Mid-Term Break: 20th – 23rd June 2026 &nbsp;&mdash;&nbsp;</span>
     <span class="ticker-item"><i class="fas fa-circle" aria-hidden="true"></i> Grade 10 CBC 2027 applications open July 1st &nbsp;&mdash;&nbsp;</span>
-    <span class="ticker-item"><i class="fas fa-circle" aria-hidden="true"></i> Sky Blue Uniform Parade – 25th June 2026 &nbsp;&mdash;&nbsp;</span>
     <span class="ticker-item"><i class="fas fa-circle" aria-hidden="true"></i> KCSE Mock Exams: 15th–26th September 2026 &nbsp;&mdash;&nbsp;</span>
     <span class="ticker-item"><i class="fas fa-circle" aria-hidden="true"></i> Sports Day: 30th August 2026 at Goyo Grounds &nbsp;&mdash;&nbsp;</span>
+    <span class="ticker-item"><i class="fas fa-circle" aria-hidden="true"></i> Tender GSS/T/001/2026 – Supply of Laboratory Equipment – Closing 15th July 2026 &nbsp;&mdash;&nbsp;</span>
   </div>
 </div>
 
@@ -1059,7 +1101,8 @@
     <div class="quick-bar-inner">
       <a href="#calendar" class="qlink"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Term Calendar</a>
       <a href="#fees" class="qlink"><i class="fas fa-wallet" aria-hidden="true"></i> Fee Structure</a>
-      <a href="#academics" class="qlink"><i class="fas fa-book-open" aria-hidden="true"></i> Academics</a>
+      <a href="#gallery" class="qlink"><i class="fas fa-images" aria-hidden="true"></i> Gallery</a>
+      <a href="#tenders" class="qlink"><i class="fas fa-file-contract" aria-hidden="true"></i> Tenders</a>
       <a href="#admissions" class="qlink"><i class="fas fa-file-alt" aria-hidden="true"></i> Admissions</a>
       <a href="#bell-schedule" class="qlink"><i class="fas fa-bell" aria-hidden="true"></i> Bell Schedule</a>
       <a href="https://wa.me/254718812493?text=Hello%20Goyo%20Senior%20School%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" class="qlink"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us</a>
@@ -1067,9 +1110,7 @@
   </div>
 </div>
 
-<!-- ════════════════════════════════════
-     MAIN CONTENT
-════════════════════════════════════ -->
+<!-- ═══════════ MAIN CONTENT ═══════════ -->
 <main id="main-content">
 
 <!-- ═══ PRINCIPAL'S MESSAGE ═══ -->
@@ -1077,8 +1118,13 @@
   <div class="container">
     <div class="principal-grid">
       <figure class="principal-portrait">
-        <i class="fas fa-user-circle" aria-hidden="true"></i>
-        <div class="stamp-badge"><span>GOYO</span>SENIOR<br>SCHOOL</div>
+        <img
+          src="principal.JPG"
+          alt="Mr. Wellingtone Ngesa, Principal of Goyo Senior School"
+          loading="lazy"
+          onerror="this.src='father.JPG'"
+        />
+        <div class="stamp-badge" aria-hidden="true"><span>GOYO</span>SENIOR<br>SCHOOL</div>
         <figcaption>
           <strong>Wellingtone Ngesa</strong>
           <span>Principal</span>
@@ -1091,8 +1137,8 @@
           "At Goyo Senior School, we believe every child carries within them the seeds of greatness. Our role as educators is to provide the nurturing environment, the qualified teachers, and the rigorous academic programme that allows those seeds to flourish."
         </blockquote>
         <p>Dear Parents, Guardians, Students, and Visitors,</p>
-        <p>Welcome to Goyo Senior School — a centre of academic excellence and character formation situated in the heart of Homa Bay County. Since our founding in 2015, we have remained steadfast in our mission to produce well-rounded graduates who are prepared not only for Kenya Certificate of Secondary Education (KCSE) success, but for the demands of university, professional life, and citizenship.</p>
-        <p>As we navigate the transition from the 8-4-4 curriculum to the Competency-Based Curriculum (CBC), our school is fully prepared. Our teachers have been trained, our pathways are structured, and our commitment to every learner's growth remains unwavering. We offer Grade 10 across three pathways — STEM, Social Sciences, and Arts & Sports Science — alongside Form 3 and Form 4 under the proven 8-4-4 structure for current upper secondary students.</p>
+        <p>Welcome to Goyo Senior School — a centre of academic excellence and character formation situated in the heart of Homa Bay County. Since our founding in 2015, we have remained steadfast in our mission to produce well-rounded graduates prepared not only for KCSE success, but for the demands of university, professional life, and citizenship.</p>
+        <p>As we navigate the transition from the 8-4-4 curriculum to the Competency-Based Curriculum (CBC), our school is fully prepared. Our teachers have been trained, our pathways are structured, and our commitment to every learner's growth remains unwavering.</p>
         <p>I invite you to engage with us, visit our school, and join our community. Together, we can build futures.</p>
         <div class="principal-sig">
           <strong>Mr. Wellingtone Ngesa</strong>
@@ -1104,14 +1150,18 @@
   </div>
 </section>
 
-<!-- ═══ ABOUT / VISION / MISSION ═══ -->
+<!-- ═══ ABOUT ═══ -->
 <section id="about" aria-labelledby="about-heading">
   <div class="container">
     <div class="about-grid">
       <div class="about-visual">
-        <div class="about-img-placeholder" role="img" aria-label="Goyo Senior School campus illustration">
-          <i class="fas fa-school" aria-hidden="true"></i>
-        </div>
+        <img
+          src="school-compound.png"
+          alt="Goyo Senior School compound showing classrooms and school grounds in Homa Bay County"
+          class="about-img-main"
+          loading="lazy"
+          onerror="this.src='school-gate.jpg'"
+        />
         <div class="about-floating-badge" aria-hidden="true">
           <strong>10+</strong>
           Years of<br>Excellence
@@ -1123,7 +1173,7 @@
         <p class="section-lead">Founded in 2015, Goyo Senior School is a co-educational public day school serving Homa Bay County. We combine academic rigour with holistic development — nurturing curious minds, confident voices, and compassionate citizens.</p>
         <div class="vmv-grid">
           <div class="vmv-card">
-          <h5>Our Motto</h5>
+            <h5>Our Motto</h5>
             <p>Education for life.</p>
           </div>
           <div class="vmv-card gold">
@@ -1132,7 +1182,7 @@
           </div>
           <div class="vmv-card gold">
             <h5>Our Mission</h5>
-            <p>To Nature well integrated persons through provision of quality Education.</p>
+            <p>To nurture well-integrated persons through provision of quality education.</p>
           </div>
           <div class="vmv-card navy">
             <h5>Our Values</h5>
@@ -1145,62 +1195,64 @@
 </section>
 
 <!-- ═══ LEADERSHIP ═══ -->
-<section id="leadership" aria-labelledby="leadership-heading">
+<section id="leadership" aria-labelledby="leadership-heading" style="background:var(--gray-50);">
   <div class="container">
     <span class="section-label">School Leadership</span>
     <h2 id="leadership-heading" class="section-title">Our Leadership Team</h2>
     <p class="section-lead">Experienced, qualified, and committed professionals guiding Goyo Senior School.</p>
     <div class="leadership-grid">
       <div class="leader-card">
-        <div class="leader-avatar" aria-hidden="true"><i class="fas fa-user-tie"></i></div>
+        <div class="leader-avatar">
+          <img src="principal.JPG" alt="Mr. Wellingtone Ngesa, Principal" loading="lazy" onerror="this.parentElement.innerHTML='<i class=\'fas fa-user-tie\' style=\'font-size:1.6rem;color:var(--teal);\'></i>'" />
+        </div>
         <h4>Mr. Wellingtone Ngesa</h4>
         <div class="role">Principal</div>
         <div class="quals">Education Management</div>
       </div>
       <div class="leader-card">
-        <div class="leader-avatar" aria-hidden="true"><i class="fas fa-user-tie"></i></div>
+        <div class="leader-avatar"><i class="fas fa-user-tie"></i></div>
         <h4>Mr. Elisha Nyakango</h4>
         <div class="role">Deputy Principal – Academics</div>
-        <div class="quals">BEd (Science), MEd curriculum</div>
+        <div class="quals">BEd (Science), MEd Curriculum</div>
       </div>
       <div class="leader-card">
-        <div class="leader-avatar" aria-hidden="true"><i class="fas fa-user-tie"></i></div>
+        <div class="leader-avatar"><i class="fas fa-user-tie"></i></div>
         <h4>Ms. Winnie Omanga</h4>
         <div class="role">Deputy Principal – Admin</div>
         <div class="quals">BEd (Arts), CPA(K)</div>
       </div>
       <div class="leader-card">
-        <div class="leader-avatar" aria-hidden="true"><i class="fas fa-atom"></i></div>
+        <div class="leader-avatar"><i class="fas fa-atom"></i></div>
         <h4>Ms. Rose Miginjo</h4>
         <div class="role">HOD – Sciences</div>
         <div class="quals">BEd (Biology/Chemistry)</div>
       </div>
       <div class="leader-card">
-        <div class="leader-avatar" aria-hidden="true"><i class="fas fa-calculator"></i></div>
+        <div class="leader-avatar"><i class="fas fa-calculator"></i></div>
         <h4>Mr. Evance Ogolla</h4>
         <div class="role">HOD – Mathematics</div>
         <div class="quals">BSc Mathematics, BEd</div>
       </div>
       <div class="leader-card">
-        <div class="leader-avatar" aria-hidden="true"><i class="fas fa-calculator"></i></div>
+        <div class="leader-avatar"><i class="fas fa-book-open"></i></div>
         <h4>Mr. Wellingtone Ngesa</h4>
         <div class="role">HOD – Languages</div>
         <div class="quals">Education, BEd</div>
       </div>
       <div class="leader-card">
-        <div class="leader-avatar" aria-hidden="true"><i class="fas fa-calculator"></i></div>
-        <h4>Mr. Jacob Opole </h4>
+        <div class="leader-avatar"><i class="fas fa-globe-africa"></i></div>
+        <h4>Mr. Jacob Opole</h4>
         <div class="role">HOD – Humanities</div>
         <div class="quals">Education, BEd</div>
       </div>
       <div class="leader-card">
-        <div class="leader-avatar" aria-hidden="true"><i class="fas fa-user-tie"></i></div>
+        <div class="leader-avatar"><i class="fas fa-user-graduate"></i></div>
         <h4>Moses Odoyo Okoko</h4>
-        <div class="role">School Captain – Student</div>
-        <div class="quals">Form 4 - 2026</div>
+        <div class="role">School Captain</div>
+        <div class="quals">Form 4 – 2026</div>
       </div>
       <div class="leader-card">
-        <div class="leader-avatar" aria-hidden="true"><i class="fas fa-users"></i></div>
+        <div class="leader-avatar"><i class="fas fa-users"></i></div>
         <h4>Board of Management</h4>
         <div class="role">School Governance</div>
         <div class="quals">22 members. Contact office for BOM details</div>
@@ -1213,63 +1265,43 @@
 <section id="academics" aria-labelledby="academics-heading">
   <div class="container">
     <span class="section-label">Curriculum</span>
-    <h2 id="academics-heading" class="section-title">Academics & Pathways</h2>
-    <p class="section-lead">We offer two distinct curriculum tracks in full compliance with Kenya's Ministry of Education: CBC (Grade 10) for new learners and 8-4-4 (Form 3–4) for current upper secondary students.</p>
-
+    <h2 id="academics-heading" class="section-title">Academics &amp; Pathways</h2>
+    <p class="section-lead">We offer two curriculum tracks in full compliance with Kenya's Ministry of Education: CBC (Grade 10) and 8-4-4 (Form 3–4) — both running concurrently.</p>
     <div class="transition-notice">
       <i class="fas fa-info-circle" aria-hidden="true"></i>
-      <strong>Curriculum Transition:</strong> Kenya is phasing in the Competency-Based Curriculum (CBC). Grade 10 students follow CBC pathways from 2025/2026. Form 3 and Form 4 students continue on the 8-4-4 curriculum and sit KCSE examinations under KNEC. Both tracks run concurrently at Goyo Senior School.
+      <strong>Curriculum Transition:</strong> Kenya is phasing in the Competency-Based Curriculum (CBC). Grade 10 students follow CBC pathways from 2025/2026. Form 3 and Form 4 students continue on the 8-4-4 curriculum and sit KCSE under KNEC. Both tracks run concurrently at Goyo Senior School.
     </div>
-
-    <div class="curriculum-tabs" aria-label="Select curriculum track">
+    <div class="curriculum-tabs">
       <div class="tab-buttons" role="tablist">
         <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-cbc" id="btn-cbc">CBC – Grade 10</button>
         <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-844" id="btn-844">8-4-4 – Form 3 &amp; 4</button>
       </div>
-
       <div class="tab-panel active" id="tab-cbc" role="tabpanel" aria-labelledby="btn-cbc">
-        <h3 style="font-family:'Playfair Display',serif; font-size:1.2rem; margin-bottom:0.5rem; color:var(--navy);">Grade 10 — Competency-Based Curriculum</h3>
-        <p style="font-size:0.88rem; color:var(--gray-700); margin-bottom:1.25rem; line-height:1.65;">Students in Grade 10 select one of three career pathways. Each pathway is designed around core and elective subjects aligned to the CBC's competency development framework — emphasising critical thinking, creativity, communication, citizenship, and character.</p>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:0.5rem;color:var(--navy);">Grade 10 — Competency-Based Curriculum</h3>
+        <p style="font-size:0.88rem;color:var(--gray-700);margin-bottom:1.25rem;line-height:1.65;">Students in Grade 10 select one of three career pathways aligned to CBC's competency development framework.</p>
         <div class="pathway-grid">
           <div class="pathway-card">
-            <div class="pathway-icon"><i class="fas fa-microscope" aria-hidden="true"></i></div>
+            <div class="pathway-icon"><i class="fas fa-microscope"></i></div>
             <h4>STEM Pathway</h4>
             <p>Mathematics, Biology, Chemistry, Physics, Computer Science. Prepares students for engineering, medicine, technology, and applied sciences.</p>
-            <div class="pathway-subjects">
-              <span class="subj-tag">Mathematics</span>
-              <span class="subj-tag">Biology</span>
-              <span class="subj-tag">Chemistry</span>
-              <span class="subj-tag">Physics</span>
-              <span class="subj-tag">ICT</span>
-            </div>
+            <div class="pathway-subjects"><span class="subj-tag">Mathematics</span><span class="subj-tag">Biology</span><span class="subj-tag">Chemistry</span><span class="subj-tag">Physics</span><span class="subj-tag">ICT</span></div>
           </div>
           <div class="pathway-card">
-            <div class="pathway-icon"><i class="fas fa-globe-africa" aria-hidden="true"></i></div>
-            <h4>Social Sciences Pathway</h4>
-            <p>History, Geography, Business Studies, Economics, Kiswahili. Prepares students for law, public policy, social sciences, and business.</p>
-            <div class="pathway-subjects">
-              <span class="subj-tag">History</span>
-              <span class="subj-tag">Geography</span>
-              <span class="subj-tag">Business</span>
-              <span class="subj-tag">Economics</span>
-              <span class="subj-tag">Kiswahili</span>
-            </div>
+            <div class="pathway-icon"><i class="fas fa-globe-africa"></i></div>
+            <h4>Social Sciences</h4>
+            <p>History, Geography, Business Studies, Economics, Kiswahili. Prepares students for law, public policy, and business.</p>
+            <div class="pathway-subjects"><span class="subj-tag">History</span><span class="subj-tag">Geography</span><span class="subj-tag">Business</span><span class="subj-tag">Economics</span><span class="subj-tag">Kiswahili</span></div>
           </div>
           <div class="pathway-card">
-            <div class="pathway-icon"><i class="fas fa-palette" aria-hidden="true"></i></div>
+            <div class="pathway-icon"><i class="fas fa-palette"></i></div>
             <h4>Arts &amp; Sports Science</h4>
-            <p>Creative Arts, Music, Physical Education, Life Skills. Prepares students for design, performing arts, sports management, and wellness.</p>
-            <div class="pathway-subjects">
-              <span class="subj-tag">Fine Art</span>
-              <span class="subj-tag">Music</span>
-              <span class="subj-tag">P.E.</span>
-              <span class="subj-tag">Life Skills</span>
-            </div>
+            <p>Creative Arts, Music, Physical Education, Life Skills. Prepares students for design, performing arts, and sports management.</p>
+            <div class="pathway-subjects"><span class="subj-tag">Fine Art</span><span class="subj-tag">Music</span><span class="subj-tag">P.E.</span><span class="subj-tag">Life Skills</span></div>
           </div>
         </div>
         <div class="cbc-info">
           <div>
-            <h5>CBC Core Competencies Developed</h5>
+            <h5>CBC Core Competencies</h5>
             <ul>
               <li>Communication and collaboration</li>
               <li>Critical thinking and problem solving</li>
@@ -1281,12 +1313,12 @@
             </ul>
           </div>
           <div>
-            <h5>CBC Learning Approach at Goyo</h5>
+            <h5>CBC Learning at Goyo</h5>
             <ul>
               <li>Project-based and experiential learning</li>
               <li>Portfolio and continuous assessment</li>
               <li>Peer collaboration and group work</li>
-              <li>Career guidance and mentorship sessions</li>
+              <li>Career guidance and mentorship</li>
               <li>Community engagement projects</li>
               <li>ICT-integrated lessons</li>
               <li>Competency reports (not just marks)</li>
@@ -1294,67 +1326,51 @@
           </div>
         </div>
       </div>
-
       <div class="tab-panel" id="tab-844" role="tabpanel" aria-labelledby="btn-844">
-        <h3 style="font-family:'Playfair Display',serif; font-size:1.2rem; margin-bottom:0.5rem; color:var(--navy);">Form 3 &amp; 4 — 8-4-4 Curriculum (KCSE)</h3>
-        <p style="font-size:0.88rem; color:var(--gray-700); margin-bottom:1.25rem; line-height:1.65;">Current Form 3 and Form 4 students follow the established 8-4-4 curriculum and will sit the Kenya Certificate of Secondary Education (KCSE) examination administered by KNEC. Subject combinations are selected in Form 3.</p>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:0.5rem;color:var(--navy);">Form 3 &amp; 4 — 8-4-4 Curriculum (KCSE)</h3>
+        <p style="font-size:0.88rem;color:var(--gray-700);margin-bottom:1.25rem;line-height:1.65;">Current Form 3 and Form 4 students follow the 8-4-4 curriculum and sit KCSE administered by KNEC.</p>
         <div class="pathway-grid">
           <div class="pathway-card">
-            <div class="pathway-icon"><i class="fas fa-atom" aria-hidden="true"></i></div>
-            <h4>Sciences Combination</h4>
+            <div class="pathway-icon"><i class="fas fa-atom"></i></div>
+            <h4>Sciences</h4>
             <p>English, Kiswahili, Mathematics, Biology, Chemistry, Physics + 2 electives. For medicine, engineering, sciences.</p>
-            <div class="pathway-subjects">
-              <span class="subj-tag">Biology</span>
-              <span class="subj-tag">Chemistry</span>
-              <span class="subj-tag">Physics</span>
-              <span class="subj-tag">Maths</span>
-            </div>
+            <div class="pathway-subjects"><span class="subj-tag">Biology</span><span class="subj-tag">Chemistry</span><span class="subj-tag">Physics</span><span class="subj-tag">Maths</span></div>
           </div>
           <div class="pathway-card">
-            <div class="pathway-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+            <div class="pathway-icon"><i class="fas fa-chart-line"></i></div>
             <h4>Business &amp; Commerce</h4>
-            <p>English, Kiswahili, Mathematics, Business Studies, Economics, Geography + electives. For business, accounting, economics.</p>
-            <div class="pathway-subjects">
-              <span class="subj-tag">Business</span>
-              <span class="subj-tag">Economics</span>
-              <span class="subj-tag">Geography</span>
-              <span class="subj-tag">Accounts</span>
-            </div>
+            <p>English, Kiswahili, Mathematics, Business Studies, Economics, Geography + electives.</p>
+            <div class="pathway-subjects"><span class="subj-tag">Business</span><span class="subj-tag">Economics</span><span class="subj-tag">Geography</span><span class="subj-tag">Accounts</span></div>
           </div>
           <div class="pathway-card">
-            <div class="pathway-icon"><i class="fas fa-book" aria-hidden="true"></i></div>
+            <div class="pathway-icon"><i class="fas fa-book"></i></div>
             <h4>Humanities</h4>
-            <p>English, Kiswahili, History, Geography, CRE/IRE, Literature. For law, journalism, social sciences, teaching.</p>
-            <div class="pathway-subjects">
-              <span class="subj-tag">History</span>
-              <span class="subj-tag">Geography</span>
-              <span class="subj-tag">CRE/IRE</span>
-              <span class="subj-tag">Literature</span>
-            </div>
+            <p>English, Kiswahili, History, Geography, CRE/IRE, Literature. For law, journalism, social sciences.</p>
+            <div class="pathway-subjects"><span class="subj-tag">History</span><span class="subj-tag">Geography</span><span class="subj-tag">CRE/IRE</span><span class="subj-tag">Literature</span></div>
           </div>
         </div>
-        <div class="cbc-info" style="border-color:rgba(240,165,0,0.3);">
+        <div class="cbc-info">
           <div>
-            <h5>KCSE Exam Preparation Structure</h5>
+            <h5>KCSE Preparation</h5>
             <ul>
               <li>Weekly subject-specific revision sessions</li>
               <li>Term 2 and Term 3 internal mock exams</li>
               <li>KCSE past paper practicals and drills</li>
               <li>KNEC mock (inter-school) in September</li>
               <li>Individual student performance tracking</li>
-              <li>Remedial lessons for identified weak areas</li>
+              <li>Remedial lessons for weak areas</li>
               <li>Parent–teacher review meetings each term</li>
             </ul>
           </div>
           <div>
             <h5>Academic Expectations</h5>
             <ul>
-              <li>Form 4 target: minimum mean grade of C+ (plus)</li>
-              <li>8 subjects minimum (compulsory + electives)</li>
-              <li>100% attendance expected in exam year</li>
-              <li>All coursework/projects submitted on time</li>
-              <li>Science and Home Science practicals compulsory</li>
-              <li>Performance in top 3 schools, Homa Bay County 2025</li>
+              <li>Form 4 target: minimum mean grade C+</li>
+              <li>8 subjects minimum</li>
+              <li>100% attendance in exam year</li>
+              <li>All coursework submitted on time</li>
+              <li>Science practicals compulsory</li>
+              <li>Top 3 schools, Homa Bay County 2025</li>
             </ul>
           </div>
         </div>
@@ -1364,100 +1380,56 @@
 </section>
 
 <!-- ═══ DEPARTMENTS ═══ -->
-<section id="departments" aria-labelledby="departments-heading">
+<section id="departments" aria-labelledby="departments-heading" style="background:var(--gray-50);">
   <div class="container">
     <span class="section-label">What We Teach</span>
     <h2 id="departments-heading" class="section-title">Academic Departments</h2>
-    <p class="section-lead">Eight departments staffed by TSC-registered, experienced teachers, covering both CBC and 8-4-4 curricula.</p>
+    <p class="section-lead">Eight departments staffed by TSC-registered, experienced teachers covering both CBC and 8-4-4 curricula.</p>
     <div class="depts-grid">
-      <div class="dept-card">
-        <div class="dept-icon"><i class="fas fa-microscope" aria-hidden="true"></i></div>
-        <h4>Pure Sciences</h4>
-        <p>Biology, Chemistry, Physics — fully equipped laboratories with safety protocols.</p>
-      </div>
-      <div class="dept-card">
-        <div class="dept-icon"><i class="fas fa-calculator" aria-hidden="true"></i></div>
-        <h4>Mathematics</h4>
-        <p>Pure Maths and Applied Maths with structured remedial support programmes.</p>
-      </div>
-      <div class="dept-card">
-        <div class="dept-icon"><i class="fas fa-chart-bar" aria-hidden="true"></i></div>
-        <h4>Business Studies</h4>
-        <p>Commerce, Economics, Accounting — linked to real entrepreneurship projects.</p>
-      </div>
-      <div class="dept-card">
-        <div class="dept-icon"><i class="fas fa-language" aria-hidden="true"></i></div>
-        <h4>Languages & Humanities</h4>
-        <p>English, Kiswahili, History, CRE/IRE, Geography and Social Education.</p>
-      </div>
-      <div class="dept-card">
-        <div class="dept-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
-        <h4>Computer Science</h4>
-        <p>ICT, coding, robotics and digital literacy. Computer lab open 7am–5pm daily.</p>
-      </div>
-      <div class="dept-card">
-        <div class="dept-icon"><i class="fas fa-palette" aria-hidden="true"></i></div>
-        <h4>Creative Arts</h4>
-        <p>Visual Art, Music, Drama. Annual school production each November.</p>
-      </div>
-      <div class="dept-card">
-        <div class="dept-icon"><i class="fas fa-heartbeat" aria-hidden="true"></i></div>
-        <h4>Home Science</h4>
-        <p>Nutrition, textiles, household management — offered to all genders.</p>
-      </div>
-      <div class="dept-card">
-        <div class="dept-icon"><i class="fas fa-futbol" aria-hidden="true"></i></div>
-        <h4>Physical Education</h4>
-        <p>Athletics, football, netball, volleyball. Inter-school competitions yearly.</p>
-      </div>
+      <div class="dept-card"><div class="dept-icon"><i class="fas fa-microscope"></i></div><h4>Pure Sciences</h4><p>Biology, Chemistry, Physics — fully equipped laboratories.</p></div>
+      <div class="dept-card"><div class="dept-icon"><i class="fas fa-calculator"></i></div><h4>Mathematics</h4><p>Pure and Applied Maths with structured remedial support.</p></div>
+      <div class="dept-card"><div class="dept-icon"><i class="fas fa-chart-bar"></i></div><h4>Business Studies</h4><p>Commerce, Economics, Accounting — linked to entrepreneurship projects.</p></div>
+      <div class="dept-card"><div class="dept-icon"><i class="fas fa-language"></i></div><h4>Languages &amp; Humanities</h4><p>English, Kiswahili, History, CRE/IRE, Geography.</p></div>
+      <div class="dept-card"><div class="dept-icon"><i class="fas fa-code"></i></div><h4>Computer Science</h4><p>ICT, coding, robotics. Computer lab open 7am–5pm daily.</p></div>
+      <div class="dept-card"><div class="dept-icon"><i class="fas fa-palette"></i></div><h4>Creative Arts</h4><p>Visual Art, Music, Drama. Annual school production each November.</p></div>
+      <div class="dept-card"><div class="dept-icon"><i class="fas fa-heartbeat"></i></div><h4>Home Science</h4><p>Nutrition, textiles, household management — offered to all genders.</p></div>
+      <div class="dept-card"><div class="dept-icon"><i class="fas fa-futbol"></i></div><h4>Physical Education</h4><p>Athletics, football, netball, volleyball. Inter-school competitions yearly.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ═══ ADMISSIONS ═══ -->
-<section id="admissions" style="background:var(--gray-50);" aria-labelledby="admissions-heading">
+<section id="admissions" aria-labelledby="admissions-heading">
   <div class="container">
     <span class="section-label">Join Goyo Senior</span>
     <h2 id="admissions-heading" class="section-title">Admissions</h2>
     <p class="section-lead">We welcome applications for Grade 10 (CBC) and Form 3 transfers. Applications are processed through the Ministry of Education portal and directly with our Admissions Office.</p>
     <div class="admissions-grid">
       <div class="admission-card">
-        <h3><i class="fas fa-user-graduate" style="color:var(--teal);margin-right:0.5rem;" aria-hidden="true"></i>Entry Requirements</h3>
+        <h3><i class="fas fa-user-graduate" style="color:var(--teal);margin-right:0.5rem;"></i>Entry Requirements</h3>
         <div class="req-list">
-          <div class="req-item"><i class="fas fa-check-circle" aria-hidden="true"></i><span><strong>Grade 10 (CBC):</strong> Completion of Grade 9 with satisfactory Junior School results. Pathway selection guided by career interest and performance.</span></div>
-          <div class="req-item"><i class="fas fa-check-circle" aria-hidden="true"></i><span><strong>Form 3 (8-4-4 Transfer):</strong> Minimum KCPE grade B or equivalent Form 2 results. Official transfer letter from previous school and county director approval required.</span></div>
-          <div class="req-item"><i class="fas fa-check-circle" aria-hidden="true"></i><span><strong>Form 4 (Special Cases):</strong> County director approval required. Contact admissions for specific guidance.</span></div>
-          <div class="req-item"><i class="fas fa-check-circle" aria-hidden="true"></i><span><strong>Age requirement:</strong> Students must be 14–20 years at time of entry.</span></div>
-          <div class="req-item"><i class="fas fa-check-circle" aria-hidden="true"></i><span><strong>Documents needed:</strong> Birth certificate, KCPE/Grade 9 results, passport photo, national ID (parent/guardian), medical form.</span></div>
+          <div class="req-item"><i class="fas fa-check-circle"></i><span><strong>Grade 10 (CBC):</strong> Completion of Grade 9 with satisfactory Junior School results. Pathway selection guided by career interest and performance.</span></div>
+          <div class="req-item"><i class="fas fa-check-circle"></i><span><strong>Form 3 Transfer:</strong> Minimum KCPE grade B or equivalent Form 2 results. Official transfer letter and county director approval required.</span></div>
+          <div class="req-item"><i class="fas fa-check-circle"></i><span><strong>Form 4 (Special Cases):</strong> County director approval required. Contact admissions for guidance.</span></div>
+          <div class="req-item"><i class="fas fa-check-circle"></i><span><strong>Age requirement:</strong> Students must be 14–20 years at time of entry.</span></div>
+          <div class="req-item"><i class="fas fa-check-circle"></i><span><strong>Documents needed:</strong> Birth certificate, KCPE/Grade 9 results, passport photo, national ID (parent/guardian), medical form.</span></div>
         </div>
         <div style="margin-top:1.5rem;">
-          <a href="mailto:admissions@goyomixed.sc.ke?subject=Admission%20Enquiry%202027&body=Hello%20Admissions%20Team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20admission.%0A%0AParent%2FGuardian%20Name%3A%0APhone%3A%0AStudent%20Name%3A%0AClass%20applying%20for%3A%0AKCPE%2FGrade%209%20results%3A%0A%0AThank%20you." class="btn-primary" style="background:var(--navy); color:white;" aria-label="Contact admissions by email">
-            <i class="fas fa-envelope" aria-hidden="true"></i> Contact Admissions
+          <a href="mailto:admissions@goyomixed.sc.ke?subject=Admission%20Enquiry%202027" class="btn-primary" style="background:var(--navy);color:white;">
+            <i class="fas fa-envelope"></i> Contact Admissions
           </a>
         </div>
       </div>
       <div class="admission-card">
-        <h3><i class="fas fa-download" style="color:var(--teal);margin-right:0.5rem;" aria-hidden="true"></i>Downloads &amp; Forms</h3>
-        <p style="font-size:0.85rem; color:var(--gray-700); margin-bottom:0.5rem; line-height:1.6;">Request the following documents via email. Our admissions office will reply within 1 business day.</p>
+        <h3><i class="fas fa-download" style="color:var(--teal);margin-right:0.5rem;"></i>Downloads &amp; Forms</h3>
+        <p style="font-size:0.85rem;color:var(--gray-700);margin-bottom:0.5rem;line-height:1.6;">Request the following documents via email. Our admissions office replies within 1 business day.</p>
         <div class="download-list">
-          <a href="mailto:admissions@goyomixed.sc.ke?subject=Request%20-%20Admission%20Form" class="dl-link" aria-label="Request admission application form">
-            <i class="fas fa-file-pdf" aria-hidden="true"></i> Admission Application Form <span>PDF</span>
-          </a>
-          <a href="mailto:admissions@goyomixed.sc.ke?subject=Request%20-%20Fee%20Structure%202026" class="dl-link" aria-label="Request fee structure">
-            <i class="fas fa-file-pdf" aria-hidden="true"></i> Fee Structure 2026 <span>PDF</span>
-          </a>
-          <a href="mailto:admissions@goyomixed.sc.ke?subject=Request%20-%20Academic%20Calendar" class="dl-link" aria-label="Request academic calendar">
-            <i class="fas fa-calendar-alt" aria-hidden="true"></i> Academic Calendar 2026 <span>PDF</span>
-          </a>
-          <a href="mailto:admissions@goyomixed.sc.ke?subject=Request%20-%20School%20Rules" class="dl-link" aria-label="Request school rules booklet">
-            <i class="fas fa-book" aria-hidden="true"></i> School Rules &amp; Discipline Policy <span>PDF</span>
-          </a>
-          <a href="mailto:admissions@goyomixed.sc.ke?subject=Request%20-%20Subject%20Selection%20Form" class="dl-link" aria-label="Request subject selection form">
-            <i class="fas fa-list-check" aria-hidden="true"></i> Subject Selection Form (Grade 10) <span>PDF</span>
-          </a>
-          <a href="mailto:admissions@goyomixed.sc.ke?subject=Request%20-%20School%20Prospectus" class="dl-link" aria-label="Request school prospectus">
-            <i class="fas fa-graduation-cap" aria-hidden="true"></i> School Prospectus <span>PDF</span>
-          </a>
+          <a href="mailto:admissions@goyomixed.sc.ke?subject=Request%20-%20Admission%20Form" class="dl-link"><i class="fas fa-file-pdf"></i> Admission Application Form <span>PDF</span></a>
+          <a href="mailto:admissions@goyomixed.sc.ke?subject=Request%20-%20Fee%20Structure%202026" class="dl-link"><i class="fas fa-file-pdf"></i> Fee Structure 2026 <span>PDF</span></a>
+          <a href="mailto:admissions@goyomixed.sc.ke?subject=Request%20-%20Academic%20Calendar" class="dl-link"><i class="fas fa-calendar-alt"></i> Academic Calendar 2026 <span>PDF</span></a>
+          <a href="mailto:admissions@goyomixed.sc.ke?subject=Request%20-%20School%20Rules" class="dl-link"><i class="fas fa-book"></i> School Rules &amp; Discipline Policy <span>PDF</span></a>
+          <a href="mailto:admissions@goyomixed.sc.ke?subject=Request%20-%20Subject%20Selection%20Form" class="dl-link"><i class="fas fa-list-check"></i> Subject Selection Form (Grade 10) <span>PDF</span></a>
+          <a href="mailto:admissions@goyomixed.sc.ke?subject=Request%20-%20School%20Prospectus" class="dl-link"><i class="fas fa-graduation-cap"></i> School Prospectus <span>PDF</span></a>
         </div>
       </div>
     </div>
@@ -1472,46 +1444,165 @@
     <p class="section-lead">A holistic education means thriving inside and outside the classroom. Our students enjoy a rich co-curricular programme, sports, and strong pastoral support.</p>
     <div class="life-grid">
       <div class="life-card">
-        <div class="life-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
+        <div class="life-icon"><i class="fas fa-users"></i></div>
         <h4>Clubs &amp; Societies</h4>
         <p>Over 12 active clubs supporting diverse interests and leadership development.</p>
-        <div class="clubs-list">
-          <span class="club-tag">Science Club</span>
-          <span class="club-tag">Debate</span>
-          <span class="club-tag">Drama</span>
-          <span class="club-tag">Chess</span>
-          <span class="club-tag">Robotics</span>
-          <span class="club-tag">Journalism</span>
-          <span class="club-tag">Scouts</span>
-          <span class="club-tag">Environment</span>
-        </div>
+        <div class="clubs-list"><span class="club-tag">Science Club</span><span class="club-tag">Debate</span><span class="club-tag">Drama</span><span class="club-tag">Chess</span><span class="club-tag">Robotics</span><span class="club-tag">Journalism</span><span class="club-tag">Scouts</span><span class="club-tag">Environment</span></div>
       </div>
       <div class="life-card">
-        <div class="life-icon"><i class="fas fa-futbol" aria-hidden="true"></i></div>
+        <div class="life-icon"><i class="fas fa-futbol"></i></div>
         <h4>Sports Programme</h4>
         <p>Competitive and recreational sports with qualified coaches. Inter-school and county level competitions.</p>
-        <div class="clubs-list">
-          <span class="club-tag">Football</span>
-          <span class="club-tag">Netball</span>
-          <span class="club-tag">Volleyball</span>
-          <span class="club-tag">Athletics</span>
-          <span class="club-tag">Table Tennis</span>
-          <span class="club-tag">Swimming</span>
-        </div>
+        <div class="clubs-list"><span class="club-tag">Football</span><span class="club-tag">Handball</span><span class="club-tag">Netball</span><span class="club-tag">Volleyball</span><span class="club-tag">Athletics</span><span class="club-tag">Swimming</span></div>
       </div>
       <div class="life-card">
-        <div class="life-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
+        <div class="life-icon"><i class="fas fa-heart"></i></div>
         <h4>Guidance &amp; Counselling</h4>
         <p>Full-time trained counsellor available. Individual sessions, group counselling, and career guidance from Form 3/Grade 10 onwards. All sessions are confidential.</p>
       </div>
       <div class="life-card">
-        <div class="life-icon"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
-        <h4>Discipline Policy</h4>
-        <p>We maintain a structured, respectful environment. Discipline is restorative and developmental — focused on correction, not punishment. Student handbook issued to all enrolled students.</p>
+        <div class="life-icon"><i class="fas fa-music"></i></div>
+        <h4>Culture &amp; Arts</h4>
+        <p>Traditional dance, drama, music, and art. Our Ramogi cultural troupe participates in national festivals and school events throughout the year.</p>
       </div>
     </div>
   </div>
 </section>
+
+<!-- ═══════════════════════════════════════════
+     GALLERY
+═══════════════════════════════════════════ -->
+<section id="gallery" aria-labelledby="gallery-heading">
+  <div class="container">
+    <span class="section-label">School Life in Pictures</span>
+    <h2 id="gallery-heading" class="section-title">Our Gallery</h2>
+    <p class="section-lead">A glimpse into the vibrant life at Goyo Senior School — sports, culture, academics, and community.</p>
+  </div>
+
+  <!-- Auto-scrolling strip -->
+  <div class="gallery-strip-wrap" aria-hidden="true">
+    <div class="gallery-strip" id="galleryStrip">
+      <!-- Set 1 -->
+      <div class="gallery-strip-item" onclick="openLightbox(0)">
+        <img src="girlshandballteam.jpg" alt="Goyo Senior School girls handball team" loading="lazy" />
+        <div class="gallery-overlay"><span>Girls Handball Team</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(1)">
+        <img src="boyshandballteam.jpg" alt="Goyo Senior School boys handball team" loading="lazy" />
+        <div class="gallery-overlay"><span>Boys Handball Team</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(2)">
+        <img src="goyo-team.jpg" alt="Goyo Senior School team photo" loading="lazy" />
+        <div class="gallery-overlay"><span>School Team</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(3)">
+        <img src="ramogi-dance.jpg" alt="Ramogi cultural dance performance by Goyo Senior School students" loading="lazy" />
+        <div class="gallery-overlay"><span>Ramogi Dance</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(4)">
+        <img src="maintaining-clean-environment.JPG" alt="Goyo Senior School students maintaining a clean school environment" loading="lazy" />
+        <div class="gallery-overlay"><span>Clean Environment Initiative</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(5)">
+        <img src="principal-appreciation-day.JPG" alt="Principal appreciation day ceremony at Goyo Senior School" loading="lazy" />
+        <div class="gallery-overlay"><span>Principal Appreciation Day</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(6)">
+        <img src="teachers-retreat.jpg" alt="Goyo Senior School teachers during a staff retreat" loading="lazy" />
+        <div class="gallery-overlay"><span>Teachers' Retreat</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(7)">
+        <img src="school-gate.jpg" alt="Main entrance gate of Goyo Senior School, Homa Bay County" loading="lazy" />
+        <div class="gallery-overlay"><span>School Gate</span></div>
+      </div>
+      <!-- Duplicate set for seamless loop -->
+      <div class="gallery-strip-item" onclick="openLightbox(0)">
+        <img src="girlshandballteam.jpg" alt="Goyo Senior School girls handball team" loading="lazy" />
+        <div class="gallery-overlay"><span>Girls Handball Team</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(1)">
+        <img src="boyshandballteam.jpg" alt="Goyo Senior School boys handball team" loading="lazy" />
+        <div class="gallery-overlay"><span>Boys Handball Team</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(2)">
+        <img src="goyo-team.jpg" alt="Goyo Senior School team photo" loading="lazy" />
+        <div class="gallery-overlay"><span>School Team</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(3)">
+        <img src="ramogi-dance.jpg" alt="Ramogi cultural dance performance" loading="lazy" />
+        <div class="gallery-overlay"><span>Ramogi Dance</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(4)">
+        <img src="maintaining-clean-environment.JPG" alt="Students maintaining clean environment" loading="lazy" />
+        <div class="gallery-overlay"><span>Clean Environment Initiative</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(5)">
+        <img src="principal-appreciation-day.JPG" alt="Principal appreciation day" loading="lazy" />
+        <div class="gallery-overlay"><span>Principal Appreciation Day</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(6)">
+        <img src="teachers-retreat.jpg" alt="Teachers retreat" loading="lazy" />
+        <div class="gallery-overlay"><span>Teachers' Retreat</span></div>
+      </div>
+      <div class="gallery-strip-item" onclick="openLightbox(7)">
+        <img src="school-gate.jpg" alt="School gate" loading="lazy" />
+        <div class="gallery-overlay"><span>School Gate</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Clickable grid -->
+  <div class="container" style="margin-top:0;">
+    <div class="gallery-grid" role="list">
+      <div class="gallery-grid-item" role="listitem" tabindex="0" onclick="openLightbox(0)" onkeydown="if(event.key==='Enter')openLightbox(0)" aria-label="Open image: Girls Handball Team">
+        <img src="girlshandballteam.jpg" alt="Goyo Senior School girls handball team competing in a county tournament" loading="lazy" />
+        <div class="gallery-caption">Girls Handball Team</div>
+      </div>
+      <div class="gallery-grid-item" role="listitem" tabindex="0" onclick="openLightbox(1)" onkeydown="if(event.key==='Enter')openLightbox(1)" aria-label="Open image: Boys Handball Team">
+        <img src="boyshandballteam.jpg" alt="Goyo Senior School boys handball team in action" loading="lazy" />
+        <div class="gallery-caption">Boys Handball Team</div>
+      </div>
+      <div class="gallery-grid-item" role="listitem" tabindex="0" onclick="openLightbox(2)" onkeydown="if(event.key==='Enter')openLightbox(2)" aria-label="Open image: School Team">
+        <img src="goyo-team.jpg" alt="Goyo Senior School team group photo" loading="lazy" />
+        <div class="gallery-caption">Goyo School Team</div>
+      </div>
+      <div class="gallery-grid-item" role="listitem" tabindex="0" onclick="openLightbox(3)" onkeydown="if(event.key==='Enter')openLightbox(3)" aria-label="Open image: Ramogi Dance">
+        <img src="ramogi-dance.jpg" alt="Students performing the traditional Ramogi dance at a school event" loading="lazy" />
+        <div class="gallery-caption">Ramogi Cultural Dance</div>
+      </div>
+      <div class="gallery-grid-item" role="listitem" tabindex="0" onclick="openLightbox(4)" onkeydown="if(event.key==='Enter')openLightbox(4)" aria-label="Open image: Clean Environment Initiative">
+        <img src="maintaining-clean-environment.JPG" alt="Goyo Senior School students taking part in a clean school environment campaign" loading="lazy" />
+        <div class="gallery-caption">Clean Environment Campaign</div>
+      </div>
+      <div class="gallery-grid-item" role="listitem" tabindex="0" onclick="openLightbox(5)" onkeydown="if(event.key==='Enter')openLightbox(5)" aria-label="Open image: Principal Appreciation Day">
+        <img src="principal-appreciation-day.JPG" alt="Students and staff during the Principal Appreciation Day ceremony at Goyo Senior School" loading="lazy" />
+        <div class="gallery-caption">Principal Appreciation Day</div>
+      </div>
+      <div class="gallery-grid-item" role="listitem" tabindex="0" onclick="openLightbox(6)" onkeydown="if(event.key==='Enter')openLightbox(6)" aria-label="Open image: Teachers Retreat">
+        <img src="teachers-retreat.jpg" alt="Goyo Senior School teaching staff during a professional retreat" loading="lazy" />
+        <div class="gallery-caption">Teachers' Retreat</div>
+      </div>
+      <div class="gallery-grid-item" role="listitem" tabindex="0" onclick="openLightbox(7)" onkeydown="if(event.key==='Enter')openLightbox(7)" aria-label="Open image: School Gate">
+        <img src="school-gate.jpg" alt="The main entrance gate of Goyo Senior School along the Homa Bay–Mbita Superhighway" loading="lazy" />
+        <div class="gallery-caption">Main Entrance Gate</div>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:1.5rem;font-size:0.82rem;color:rgba(255,255,255,0.45);">
+      <i class="fas fa-hand-pointer" style="color:var(--sky);margin-right:0.35rem;"></i> Click any image to enlarge &nbsp;&bull;&nbsp; Hover over the strip above to pause scrolling
+    </p>
+  </div>
+</section>
+
+<!-- Gallery Lightbox -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery viewer">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox"><i class="fas fa-times"></i></button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+    <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+</div>
 
 <!-- ═══ ACADEMIC CALENDAR ═══ -->
 <section id="calendar" aria-labelledby="calendar-heading">
@@ -1521,41 +1612,15 @@
     <p class="section-lead">All dates follow Ministry of Education guidelines. Day scholar hours: 7:15am – 4:15pm.</p>
     <div class="cal-table-wrap">
       <table class="cal-table" aria-label="Academic calendar 2026">
-        <thead>
-          <tr>
-            <th scope="col">Term</th>
-            <th scope="col">Opening</th>
-            <th scope="col">Half-Term Break</th>
-            <th scope="col">Closing</th>
-            <th scope="col">Weeks</th>
-          </tr>
-        </thead>
+        <thead><tr><th scope="col">Term</th><th scope="col">Opening</th><th scope="col">Half-Term Break</th><th scope="col">Closing</th><th scope="col">Weeks</th></tr></thead>
         <tbody>
-          <tr>
-            <td><span class="term-tag"><i class="fas fa-seedling" aria-hidden="true"></i> Term 1</span></td>
-            <td><span class="date-range">Mon 05 Jan</span></td>
-            <td><span class="date-break">25 Feb – 01 March</span></td>
-            <td><span class="date-range">Fri 07 Apr</span></td>
-            <td>13 wks</td>
-          </tr>
-          <tr>
-            <td><span class="term-tag"><i class="fas fa-sun" aria-hidden="true"></i> Term 2</span></td>
-            <td><span class="date-range">Mon 27 Apr</span></td>
-            <td><span class="date-break">20 – 23 Jun</span></td>
-            <td><span class="date-range">Fri 01 Aug</span></td>
-            <td>14 wks</td>
-          </tr>
-          <tr>
-            <td><span class="term-tag"><i class="fas fa-star" aria-hidden="true"></i> Term 3 (KCSE)</span></td>
-            <td><span class="date-range">Mon 25 Aug</span></td>
-            <td><span class="date-break">25 – 28 Sep</span></td>
-            <td><span class="date-range">Fri 24 Oct</span></td>
-            <td>9 wks</td>
-          </tr>
+          <tr><td><span class="term-tag"><i class="fas fa-seedling"></i> Term 1</span></td><td><span class="date-range">Mon 05 Jan</span></td><td><span class="date-break">25 Feb – 01 March</span></td><td><span class="date-range">Fri 07 Apr</span></td><td>13 wks</td></tr>
+          <tr><td><span class="term-tag"><i class="fas fa-sun"></i> Term 2</span></td><td><span class="date-range">Mon 27 Apr</span></td><td><span class="date-break">20 – 23 Jun</span></td><td><span class="date-range">Fri 01 Aug</span></td><td>14 wks</td></tr>
+          <tr><td><span class="term-tag"><i class="fas fa-star"></i> Term 3 (KCSE)</span></td><td><span class="date-range">Mon 25 Aug</span></td><td><span class="date-break">25 – 28 Sep</span></td><td><span class="date-range">Fri 24 Oct</span></td><td>9 wks</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="cal-note" role="note"><i class="fas fa-info-circle" aria-hidden="true"></i> Public holidays observed as per government gazette. KCSE national examinations begin mid-October under KNEC supervision. Refer to the school diary for full co-curricular event dates.</div>
+    <div class="cal-note" role="note"><i class="fas fa-info-circle"></i> Public holidays observed as per government gazette. KCSE national examinations begin mid-October under KNEC supervision.</div>
   </div>
 </section>
 
@@ -1567,48 +1632,122 @@
     <p class="section-lead">Government-subsidised day-scholar fees. No boarding. No hidden levies. Payment via M-Pesa Paybill or bank transfer.</p>
     <div class="fees-table-wrap">
       <table class="fees-table" aria-label="Fee structure 2026">
-        <thead>
-          <tr>
-            <th scope="col">Item</th>
-            <th scope="col">Notes</th>
-            <th scope="col">Amount (KES)</th>
-          </tr>
-        </thead>
+        <thead><tr><th scope="col">Item</th><th scope="col">Notes</th><th scope="col">Amount (KES)</th></tr></thead>
         <tbody>
-          <tr>
-            <td>Tuition Fee (Govt. Subsidised)</td>
-            <td>Per term</td>
-            <td>18,500</td>
-          </tr>
-          <tr>
-            <td>Activity &amp; Sports Levy</td>
-            <td>Per term</td>
-            <td>4,500</td>
-          </tr>
-          <tr>
-            <td>ICT &amp; Digital Learning Levy</td>
-            <td>Per term</td>
-            <td>2,000</td>
-          </tr>
-          <tr>
-            <td>Lunch Programme</td>
-            <td>Optional, per term</td>
-            <td>3,200</td>
-          </tr>
-          <tr>
-            <td>Sky Blue Uniform (Full Set)</td>
-            <td>Grade 10 only — one-off</td>
-            <td>6,200</td>
-          </tr>
-          <tr>
-            <td><strong>Total Per Term (excl. uniform)</strong></td>
-            <td>Includes optional lunch</td>
-            <td><strong>28,200</strong></td>
-          </tr>
+          <tr><td>Tuition Fee (Govt. Subsidised)</td><td>Per term</td><td>18,500</td></tr>
+          <tr><td>Activity &amp; Sports Levy</td><td>Per term</td><td>4,500</td></tr>
+          <tr><td>ICT &amp; Digital Learning Levy</td><td>Per term</td><td>2,000</td></tr>
+          <tr><td>Lunch Programme</td><td>Optional, per term</td><td>3,200</td></tr>
+          <tr><td>Sky Blue Uniform (Full Set)</td><td>Grade 10 only — one-off</td><td>6,200</td></tr>
+          <tr><td><strong>Total Per Term (excl. uniform)</strong></td><td>Includes optional lunch</td><td><strong>28,200</strong></td></tr>
         </tbody>
       </table>
     </div>
-    <p class="fees-note"><i class="fas fa-info-circle" aria-hidden="true"></i>&nbsp; Fee waivers and bursaries available for needy students. Contact: <a href="mailto:bursary@goyomixed.sc.ke" style="color:var(--sky-lt);">bursary@goyomixed.sc.ke</a></p>
+    <p class="fees-note"><i class="fas fa-info-circle"></i>&nbsp; Fee waivers and bursaries available for needy students. Contact: <a href="mailto:bursary@goyomixed.sc.ke" style="color:var(--sky-lt);">bursary@goyomixed.sc.ke</a></p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TENDERS
+═══════════════════════════════════════════ -->
+<section id="tenders" aria-labelledby="tenders-heading">
+  <div class="container">
+    <span class="section-label">Procurement</span>
+    <h2 id="tenders-heading" class="section-title">Tenders &amp; Procurement</h2>
+    <div class="tender-header-row">
+      <p class="section-lead">Goyo Senior School invites eligible suppliers and contractors to submit bids for the following advertised tenders. All procurement follows Kenya Public Procurement and Asset Disposal Act (PPADA 2015).</p>
+      <div class="tender-badge-row"><i class="fas fa-shield-halved"></i> PPADA 2015 Compliant</div>
+    </div>
+
+    <div class="tenders-grid">
+
+      <!-- Tender 1 – OPEN -->
+      <div class="tender-card">
+        <div class="tender-meta">
+          <span class="tender-status open"><i class="fas fa-circle"></i> Open</span>
+          <span class="tender-ref">Ref: GSS/T/001/2026</span>
+        </div>
+        <h4>Supply of Science Laboratory Equipment &amp; Chemicals</h4>
+        <p>Supply and delivery of Physics, Chemistry, and Biology laboratory equipment and chemicals for the 2026/2027 academic year. Items include glassware, reagents, microscopes, and safety equipment.</p>
+        <div class="tender-dates">
+          <div class="td-row"><span class="td-label">Advertised</span><span class="td-val">02 June 2026</span></div>
+          <div class="td-row"><span class="td-label">Closing Date</span><span class="td-val">15 July 2026, 12:00pm</span></div>
+          <div class="td-row"><span class="td-label">Opening</span><span class="td-val">15 July 2026, 2:00pm</span></div>
+          <div class="td-row"><span class="td-label">Tender Documents</span><span class="td-val">KES 1,000 (non-refundable)</span></div>
+        </div>
+        <div class="tender-actions">
+          <a href="mailto:procurement@goyomixed.sc.ke?subject=Tender%20Enquiry%20-%20GSS%2FT%2F001%2F2026%20-%20Lab%20Equipment&body=Dear%20Procurement%20Office%2C%0A%0AI%20wish%20to%20enquire%20about%20Tender%20GSS%2FT%2F001%2F2026%20(Supply%20of%20Science%20Laboratory%20Equipment).%0A%0ACompany%20Name%3A%0AContact%20Person%3A%0APhone%3A%0A%0AKindly%20advise%20on%20how%20to%20obtain%20the%20tender%20documents.%0A%0ARegards%2C" class="tender-btn primary"><i class="fas fa-envelope"></i> Request Documents</a>
+          <a href="tel:+254718812493" class="tender-btn secondary"><i class="fas fa-phone-alt"></i> Call Office</a>
+        </div>
+      </div>
+
+      <!-- Tender 2 – OPEN -->
+      <div class="tender-card">
+        <div class="tender-meta">
+          <span class="tender-status open"><i class="fas fa-circle"></i> Open</span>
+          <span class="tender-ref">Ref: GSS/T/002/2026</span>
+        </div>
+        <h4>Supply of Textbooks &amp; CBC Learning Materials (Grade 10)</h4>
+        <p>Supply and delivery of approved CBC Grade 10 textbooks, workbooks, and supplementary learning materials across all three pathways (STEM, Social Sciences, Arts &amp; Sports Science) for 2026/2027.</p>
+        <div class="tender-dates">
+          <div class="td-row"><span class="td-label">Advertised</span><span class="td-val">02 June 2026</span></div>
+          <div class="td-row"><span class="td-label">Closing Date</span><span class="td-val">18 July 2026, 12:00pm</span></div>
+          <div class="td-row"><span class="td-label">Opening</span><span class="td-val">18 July 2026, 2:00pm</span></div>
+          <div class="td-row"><span class="td-label">Tender Documents</span><span class="td-val">KES 1,000 (non-refundable)</span></div>
+        </div>
+        <div class="tender-actions">
+          <a href="mailto:procurement@goyomixed.sc.ke?subject=Tender%20Enquiry%20-%20GSS%2FT%2F002%2F2026%20-%20Textbooks&body=Dear%20Procurement%20Office%2C%0A%0AI%20wish%20to%20enquire%20about%20Tender%20GSS%2FT%2F002%2F2026%20(Supply%20of%20Textbooks).%0A%0ACompany%20Name%3A%0AContact%20Person%3A%0APhone%3A%0A%0ARegards%2C" class="tender-btn primary"><i class="fas fa-envelope"></i> Request Documents</a>
+          <a href="tel:+254718812493" class="tender-btn secondary"><i class="fas fa-phone-alt"></i> Call Office</a>
+        </div>
+      </div>
+
+      <!-- Tender 3 – UPCOMING -->
+      <div class="tender-card">
+        <div class="tender-meta">
+          <span class="tender-status upcoming"><i class="fas fa-clock"></i> Upcoming</span>
+          <span class="tender-ref">Ref: GSS/T/003/2026</span>
+        </div>
+        <h4>Construction of Additional Classroom Block (3 Rooms)</h4>
+        <p>Invitation to prequalified contractors to bid for construction of a three-classroom block with standard finishes, electrical, plumbing, and accessibility ramp per MoE specifications.</p>
+        <div class="tender-dates">
+          <div class="td-row"><span class="td-label">Advertised</span><span class="td-val">01 August 2026</span></div>
+          <div class="td-row"><span class="td-label">Closing Date</span><span class="td-val">05 September 2026, 12:00pm</span></div>
+          <div class="td-row"><span class="td-label">Site Visit</span><span class="td-val">15 August 2026, 10:00am</span></div>
+          <div class="td-row"><span class="td-label">Tender Documents</span><span class="td-val">KES 2,000 (non-refundable)</span></div>
+        </div>
+        <div class="tender-actions">
+          <a href="mailto:procurement@goyomixed.sc.ke?subject=Tender%20Pre-Registration%20-%20GSS%2FT%2F003%2F2026%20-%20Classroom%20Block&body=Dear%20Procurement%20Office%2C%0A%0AI%20wish%20to%20register%20interest%20in%20Tender%20GSS%2FT%2F003%2F2026%20(Construction%20of%20Classroom%20Block).%0A%0ACompany%20Name%3A%0ARegistration%20No.%3A%0AContact%20Person%3A%0APhone%3A%0A%0ARegards%2C" class="tender-btn primary"><i class="fas fa-envelope"></i> Register Interest</a>
+          <a href="tel:+254718812493" class="tender-btn secondary"><i class="fas fa-phone-alt"></i> Call Office</a>
+        </div>
+      </div>
+
+      <!-- Tender 4 – CLOSED -->
+      <div class="tender-card closed">
+        <div class="tender-meta">
+          <span class="tender-status closed"><i class="fas fa-ban"></i> Closed</span>
+          <span class="tender-ref">Ref: GSS/T/004/2025</span>
+        </div>
+        <h4>Supply &amp; Installation of Computer Laboratory Equipment</h4>
+        <p>This tender for supply and installation of 30 desktop computers, networking equipment, UPS units, and projectors for the school's ICT laboratory has now closed.</p>
+        <div class="tender-dates">
+          <div class="td-row"><span class="td-label">Advertised</span><span class="td-val">10 October 2025</span></div>
+          <div class="td-row"><span class="td-label">Closed</span><span class="td-val">15 November 2025</span></div>
+          <div class="td-row"><span class="td-label">Status</span><span class="td-val">Awarded</span></div>
+        </div>
+        <div class="tender-actions">
+          <span class="tender-btn disabled"><i class="fas fa-lock"></i> Closed – No longer accepting bids</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="tender-notice" role="note">
+      <i class="fas fa-info-circle"></i>
+      <p>
+        <strong>How to obtain tender documents:</strong> Visit the school procurement office between 8:00am–4:00pm on school days (Monday–Friday) and pay the non-refundable tender fee at the bursar. Documents will be issued upon payment. For postal/email enquiries, contact: <a href="mailto:procurement@goyomixed.sc.ke">procurement@goyomixed.sc.ke</a> &nbsp;|&nbsp; Tel: <a href="tel:+254718812493">+254 718 812 493</a>.<br><br>
+        <strong>Mandatory requirements:</strong> Valid business registration certificate, PIN certificate, Tax Compliance Certificate (TCC), and relevant professional licences where applicable. The school reserves the right to accept or reject any tender without giving reasons.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -1623,7 +1762,7 @@
         <div class="notice-body">
           <span class="notice-tag">Holiday</span>
           <h5>Mid-Term Break – Term 2</h5>
-          <p>School closes Friday 20th June 2026 and reopens Monday 24th June. Day scholar transport will operate normal routes on both dates. Parents are requested to collect students by 3:30pm on closing day.</p>
+          <p>School closes Friday 20th June 2026 and reopens Monday 24th June. Day scholar transport operates normal routes on both dates. Parents are requested to collect students by 3:30pm on closing day.</p>
         </div>
       </article>
       <article class="notice-card">
@@ -1639,7 +1778,15 @@
         <div class="notice-body">
           <span class="notice-tag">Admissions</span>
           <h5>Grade 10 CBC 2027 – Application Portal Opens</h5>
-          <p>Applications for Grade 10 and Form One entry in January 2027 will open on 1st July 2026 via the Ministry of Education portal. Contact admissions for guidance: <a href="mailto:admissions@goyomixed.sc.ke">admissions@goyomixed.sc.ke</a></p>
+          <p>Applications for Grade 10 and Form One entry in January 2027 open on 1st July 2026 via the Ministry of Education portal. Contact admissions: <a href="mailto:admissions@goyomixed.sc.ke">admissions@goyomixed.sc.ke</a></p>
+        </div>
+      </article>
+      <article class="notice-card">
+        <div class="notice-date" aria-label="15 July"><strong>15</strong>Jul</div>
+        <div class="notice-body">
+          <span class="notice-tag">Tender</span>
+          <h5>Tender Closing – GSS/T/001/2026 Lab Equipment</h5>
+          <p>The tender for supply of Science Laboratory Equipment and Chemicals closes 15th July 2026 at 12:00pm. Bid opening will take place at 2:00pm the same day at the school's boardroom. All bidders are welcome to attend the opening.</p>
         </div>
       </article>
       <article class="notice-card">
@@ -1647,7 +1794,7 @@
         <div class="notice-body">
           <span class="notice-tag">Examinations</span>
           <h5>KCSE Mock Examinations – Form Four</h5>
-          <p>Form Four mock exams commence 15th September 2026. Revised timetable and instructions will be issued by the Examination Office. All Form Four parents are requested to attend the pre-mock briefing on 10th September at 3:30pm.</p>
+          <p>Form Four mock exams commence 15th September 2026. All Form Four parents are requested to attend the pre-mock briefing on 10th September at 3:30pm.</p>
         </div>
       </article>
     </div>
@@ -1662,7 +1809,7 @@
     <p class="section-lead">Monday, Tuesday, Thursday, Friday schedule. Wednesday: early close at 2:30pm for teacher professional development.</p>
     <div class="bell-grid">
       <div class="bell-card">
-        <div class="bell-card-head"><i class="fas fa-sun" aria-hidden="true"></i> Morning</div>
+        <div class="bell-card-head"><i class="fas fa-sun"></i> Morning</div>
         <div class="bell-row"><span class="bell-time">7:15 AM</span><span class="bell-label">Gates open &amp; Assembly prep</span></div>
         <div class="bell-row"><span class="bell-time">7:30 AM</span><span class="bell-label">Assembly &amp; Announcements</span></div>
         <div class="bell-row"><span class="bell-time">7:50 AM</span><span class="bell-label">Lesson 1</span></div>
@@ -1671,7 +1818,7 @@
         <div class="bell-row"><span class="bell-time">10:20 AM</span><span class="bell-label">Short Break (20 min)</span></div>
       </div>
       <div class="bell-card">
-        <div class="bell-card-head"><i class="fas fa-cloud-sun" aria-hidden="true"></i> Midday</div>
+        <div class="bell-card-head"><i class="fas fa-cloud-sun"></i> Midday</div>
         <div class="bell-row"><span class="bell-time">10:40 AM</span><span class="bell-label">Lesson 4</span></div>
         <div class="bell-row"><span class="bell-time">11:30 AM</span><span class="bell-label">Lesson 5</span></div>
         <div class="bell-row"><span class="bell-time">12:20 PM</span><span class="bell-label">Lesson 6</span></div>
@@ -1680,7 +1827,7 @@
         <div class="bell-row"><span class="bell-time">2:50 PM</span><span class="bell-label">Lesson 8</span></div>
       </div>
       <div class="bell-card">
-        <div class="bell-card-head"><i class="fas fa-moon" aria-hidden="true"></i> Afternoon</div>
+        <div class="bell-card-head"><i class="fas fa-moon"></i> Afternoon</div>
         <div class="bell-row"><span class="bell-time">3:40 PM</span><span class="bell-label">Lesson 9 / Prep</span></div>
         <div class="bell-row"><span class="bell-time">4:15 PM</span><span class="bell-label">End of Classes</span></div>
         <div class="bell-row"><span class="bell-time">4:20 PM</span><span class="bell-label">Clubs &amp; Co-curricular</span></div>
@@ -1696,30 +1843,29 @@
   <div class="container">
     <span class="section-label">Join Our Team</span>
     <h2 id="careers-heading" class="section-title">Careers at Goyo Senior</h2>
-    <p class="section-lead">We seek dedicated professionals to join our vibrant school community. Apply by emailing your CV and cover letter to <a href="mailto:hr@goyomixed.sc.ke" style="color:var(--teal); font-weight:700;">hr@goyomixed.sc.ke</a></p>
+    <p class="section-lead">We seek dedicated professionals to join our vibrant school community. Apply by emailing your CV and cover letter to <a href="mailto:hr@goyomixed.sc.ke" style="color:var(--teal);font-weight:700;">hr@goyomixed.sc.ke</a></p>
     <div class="jobs-grid">
       <div class="job-card">
-        <span class="job-badge"><i class="fas fa-circle" aria-hidden="true"></i> Open</span>
+        <span class="job-badge"><i class="fas fa-circle"></i> Open</span>
         <h4>English &amp; Literature Teacher</h4>
         <p>TSC-registered. BEd or degree with PGDE in English. Strong communicator with KCSE set text experience. CBC training an advantage.</p>
-        <a href="mailto:hr@goyomixed.sc.ke?subject=Application%20-%20English%20%26%20Literature%20Teacher&body=Dear%20HR%20Team%2C%0A%0AI%20wish%20to%20apply%20for%20the%20English%20%26%20Literature%20Teacher%20position.%0A%0APlease%20find%20my%20CV%20attached.%0A%0ARegards%2C" class="job-apply" aria-label="Apply for English and Literature Teacher position"><i class="fas fa-paper-plane" aria-hidden="true"></i> Apply via Email</a>
+        <a href="mailto:hr@goyomixed.sc.ke?subject=Application%20-%20English%20%26%20Literature%20Teacher" class="job-apply"><i class="fas fa-paper-plane"></i> Apply via Email</a>
       </div>
       <div class="job-card">
-        <span class="job-badge"><i class="fas fa-circle" aria-hidden="true"></i> Open</span>
+        <span class="job-badge"><i class="fas fa-circle"></i> Open</span>
         <h4>ICT &amp; Robotics Instructor</h4>
         <p>Degree in Computer Science or IT. Experience teaching secondary-level coding and digital literacy. Google/Microsoft certification a plus.</p>
-        <a href="mailto:hr@goyomixed.sc.ke?subject=Application%20-%20ICT%20%26%20Robotics%20Instructor&body=Dear%20HR%20Team%2C%0A%0AI%20wish%20to%20apply%20for%20the%20ICT%20%26%20Robotics%20Instructor%20position.%0A%0APlease%20find%20my%20CV%20attached.%0A%0ARegards%2C" class="job-apply" aria-label="Apply for ICT and Robotics Instructor position"><i class="fas fa-paper-plane" aria-hidden="true"></i> Apply via Email</a>
+        <a href="mailto:hr@goyomixed.sc.ke?subject=Application%20-%20ICT%20%26%20Robotics%20Instructor" class="job-apply"><i class="fas fa-paper-plane"></i> Apply via Email</a>
       </div>
       <div class="job-card">
-        <span class="job-badge part"><i class="fas fa-clock" aria-hidden="true"></i> Part-Time</span>
+        <span class="job-badge part"><i class="fas fa-clock"></i> Part-Time</span>
         <h4>School Nurse (Part-Time)</h4>
         <p>Registered nurse with KNB licence. 2+ years clinical experience. 3 days/week on-site. Adolescent health experience required.</p>
-        <a href="mailto:hr@goyomixed.sc.ke?subject=Application%20-%20Part-Time%20School%20Nurse&body=Dear%20HR%20Team%2C%0A%0AI%20wish%20to%20apply%20for%20the%20Part-Time%20School%20Nurse%20position.%0A%0APlease%20find%20my%20CV%20attached.%0A%0ARegards%2C" class="job-apply" aria-label="Apply for Part-Time School Nurse position"><i class="fas fa-paper-plane" aria-hidden="true"></i> Apply via Email</a>
+        <a href="mailto:hr@goyomixed.sc.ke?subject=Application%20-%20Part-Time%20School%20Nurse" class="job-apply"><i class="fas fa-paper-plane"></i> Apply via Email</a>
       </div>
     </div>
-    <p style="margin-top:1.25rem; font-size:0.82rem; color:var(--gray-400);">
-      <i class="fas fa-info-circle" style="color:var(--teal);" aria-hidden="true"></i>&nbsp;
-      Attach CV (PDF), certified certificates, and a cover letter. Subject line must include the job title. Only shortlisted candidates will be contacted.
+    <p style="margin-top:1.25rem;font-size:0.82rem;color:var(--gray-400);">
+      <i class="fas fa-info-circle" style="color:var(--teal);"></i>&nbsp; Attach CV (PDF), certified certificates, and a cover letter. Subject line must include the job title. Only shortlisted candidates will be contacted.
     </p>
   </div>
 </section>
@@ -1732,52 +1878,52 @@
     <p class="section-lead">No online forms — just a direct email, phone call, or WhatsApp message. We respond within 24 hours on school days.</p>
     <div class="contact-grid">
       <div class="contact-card">
-        <h3><i class="fas fa-user-plus" style="color:var(--teal); margin-right:0.5rem;" aria-hidden="true"></i>Student Enrolment</h3>
+        <h3><i class="fas fa-user-plus" style="color:var(--teal);margin-right:0.5rem;"></i>Student Enrolment</h3>
         <p class="lead">Contact us via email, phone, or WhatsApp to begin the admission process. We will reply with required documents and next steps within one business day.</p>
         <div class="contact-actions">
-          <a href="mailto:admissions@goyomixed.sc.ke?subject=Admission%20Enquiry%20-%202027&body=Hello%20Admissions%20Team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20enrolling%20my%20child.%0A%0AParent%2FGuardian%20Name%3A%0APhone%3A%0AStudent%20Name%3A%0ACurrent%20Class%2FGrade%3A%0AKCPE%2FGrade%209%20Score%3A%0A%0AThank%20you." class="cta-link cta-email" aria-label="Email admissions">
-            <div class="cta-link-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+          <a href="mailto:admissions@goyomixed.sc.ke?subject=Admission%20Enquiry%20-%202027" class="cta-link cta-email">
+            <div class="cta-link-icon"><i class="fas fa-envelope"></i></div>
             <div class="cta-link-text">admissions@goyomixed.sc.ke <strong>Click to open pre-filled email</strong></div>
           </a>
-          <a href="https://wa.me/254718812493?text=Hello%20Goyo%20Senior%20School%2C%20I%20would%20like%20to%20enquire%20about%20admission%20for%20my%20child." target="_blank" rel="noopener" class="cta-link cta-wa" aria-label="WhatsApp admissions enquiry">
-            <div class="cta-link-icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></div>
+          <a href="https://wa.me/254718812493?text=Hello%20Goyo%20Senior%20School%2C%20I%20would%20like%20to%20enquire%20about%20admission%20for%20my%20child." target="_blank" rel="noopener" class="cta-link cta-wa">
+            <div class="cta-link-icon"><i class="fab fa-whatsapp"></i></div>
             <div class="cta-link-text">WhatsApp Us <strong>Chat with Admissions Office</strong></div>
           </a>
-          <a href="tel:+254712345678" class="cta-link cta-phone" aria-label="Call admissions office">
-            <div class="cta-link-icon"><i class="fas fa-phone-alt" aria-hidden="true"></i></div>
-            <div class="cta-link-text">+254 742447303 <strong>Call Admissions (Mon–Fri, 8am–4pm)</strong></div>
-          </a>
-          <a href="tel:+254202678901" class="cta-link cta-phone" aria-label="Call landline">
-            <div class="cta-link-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
-            <div class="cta-link-text">---- <strong>Landline (Mon–Fri 8am–4pm)</strong></div>
+          <a href="tel:+254742447303" class="cta-link cta-phone">
+            <div class="cta-link-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="cta-link-text">+254 742 447 303 <strong>Call Admissions (Mon–Fri, 8am–4pm)</strong></div>
           </a>
         </div>
       </div>
       <div class="contact-card">
-        <h3><i class="fas fa-map-marker-alt" style="color:var(--teal); margin-right:0.5rem;" aria-hidden="true"></i>Find Us</h3>
+        <h3><i class="fas fa-map-marker-alt" style="color:var(--teal);margin-right:0.5rem;"></i>Find Us</h3>
         <p class="lead">Located off Homa Bay–Mbita Superhighway in Goyo Estate, accessible by public transport and school bus routes.</p>
         <div class="contact-details">
           <div class="detail-row">
-            <i class="fas fa-location-dot" aria-hidden="true"></i>
+            <i class="fas fa-location-dot"></i>
             <span><strong>Physical Address</strong>Off Homa Bay–Mbita Superhighway, Goyo Estate, Kanyamwa, Homa Bay County. P.O Box 435-40300, Homa Bay.</span>
           </div>
           <div class="detail-row">
-            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <i class="fas fa-envelope"></i>
             <span><strong>General Enquiries</strong><a href="mailto:info@goyomixed.sc.ke">info@goyomixed.sc.ke</a></span>
           </div>
           <div class="detail-row">
-            <i class="fas fa-briefcase" aria-hidden="true"></i>
+            <i class="fas fa-briefcase"></i>
             <span><strong>Job Applications</strong><a href="mailto:hr@goyomixed.sc.ke">hr@goyomixed.sc.ke</a></span>
           </div>
           <div class="detail-row">
-            <i class="fas fa-wallet" aria-hidden="true"></i>
+            <i class="fas fa-file-contract"></i>
+            <span><strong>Procurement &amp; Tenders</strong><a href="mailto:procurement@goyomixed.sc.ke">procurement@goyomixed.sc.ke</a></span>
+          </div>
+          <div class="detail-row">
+            <i class="fas fa-wallet"></i>
             <span><strong>Bursary &amp; Fees</strong><a href="mailto:bursary@goyomixed.sc.ke">bursary@goyomixed.sc.ke</a></span>
           </div>
         </div>
         <div class="map-placeholder" role="region" aria-label="Map location placeholder">
-          <i class="fas fa-map-pin" aria-hidden="true"></i>
-          <span style="font-size:0.82rem; font-weight:600;">GPS: -1.1492, 36.9531</span>
-          <a href="https://maps.google.com/?q=Goyo+Senior+School+Homa+Bay" target="_blank" rel="noopener" aria-label="Open Goyo Senior School in Google Maps">Open in Google Maps →</a>
+          <i class="fas fa-map-pin"></i>
+          <span style="font-size:0.82rem;font-weight:600;">GPS: -1.1492, 36.9531</span>
+          <a href="https://maps.google.com/?q=Goyo+Senior+School+Homa+Bay" target="_blank" rel="noopener">Open in Google Maps →</a>
         </div>
       </div>
     </div>
@@ -1787,26 +1933,25 @@
 </main>
 
 <!-- CTA BANNER -->
-<div class="cta-banner" role="complementary" aria-label="Admissions call to action">
+<div class="cta-banner" role="complementary">
   <div class="container">
     <h2>Join the Goyo Senior Family</h2>
     <p>Grade 10 and Form One 2027 admissions open July 1st. Reach out today to secure your child's future.</p>
     <div class="cta-banner-actions">
-      <a href="mailto:admissions@goyomixed.sc.ke?subject=Admission%20Enquiry%202027" class="btn-primary" aria-label="Email admissions"><i class="fas fa-envelope" aria-hidden="true"></i> Email Admissions</a>
-      <a href="https://wa.me/254718812493?text=Hello%20Goyo%20Senior%20School%2C%20I%20would%20like%20to%20enquire%20about%20admissions%20for%202027." target="_blank" rel="noopener" class="btn-outline" aria-label="WhatsApp admissions"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Now</a>
+      <a href="mailto:admissions@goyomixed.sc.ke?subject=Admission%20Enquiry%202027" class="btn-primary"><i class="fas fa-envelope"></i> Email Admissions</a>
+      <a href="https://wa.me/254718812493?text=Hello%20Goyo%20Senior%20School%2C%20I%20would%20like%20to%20enquire%20about%20admissions%20for%202027." target="_blank" rel="noopener" class="btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
     </div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════
-     FOOTER
-════════════════════════════════════ -->
+<!-- ═══════════ FOOTER ═══════════ -->
 <footer role="contentinfo">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="#home" class="logo" aria-label="Goyo Senior School – Home">
-          <div class="logo-badge" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+        <a href="#home" class="logo">
+          <img src="logo.jpg" alt="Goyo Senior School" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="logo-badge" style="display:none;"><i class="fas fa-graduation-cap"></i></div>
           <div class="logo-words">
             <strong style="color:white;">GOYO SENIOR</strong>
             <span>School &middot; Homa Bay</span>
@@ -1815,10 +1960,10 @@
         <p>Established 2015. A co-educational public day school in Homa Bay County offering CBC Grade 10 and KCSE Form 3–4 education. Committed to excellence, integrity, and service.</p>
         <div class="footer-motto">"Excellence, Integrity, Service"</div>
         <div class="footer-social" aria-label="Social media links">
-          <a href="#" class="social-btn" aria-label="Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-          <a href="#" class="social-btn" aria-label="Twitter/X profile"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
-          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-          <a href="https://wa.me/254718812493" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="#" class="social-btn" aria-label="Facebook page"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter/X profile"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/254718812493" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
       <div class="footer-col">
@@ -1827,8 +1972,8 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="#leadership">Leadership</a></li>
           <li><a href="#departments">Departments</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#calendar">Academic Calendar</a></li>
-          <li><a href="#bell-schedule">Bell Schedule</a></li>
           <li><a href="#notices">Notices</a></li>
         </ul>
       </div>
@@ -1839,17 +1984,17 @@
           <li><a href="#academics">Form 3 &amp; 4 (8-4-4)</a></li>
           <li><a href="#admissions">How to Apply</a></li>
           <li><a href="#fees">Fee Structure</a></li>
-          <li><a href="mailto:admissions@goyomixed.sc.ke?subject=Prospectus%20Request">Request Prospectus</a></li>
+          <li><a href="#tenders">Tenders</a></li>
           <li><a href="mailto:bursary@goyomixed.sc.ke">Bursary Info</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Contact</h5>
         <ul>
-          <li><a href="tel:+254712345678">+254 718812493</a></li>
+          <li><a href="tel:+254718812493">+254 718 812 493</a></li>
           <li><a href="mailto:info@goyomixed.sc.ke">info@goyomixed.sc.ke</a></li>
           <li><a href="mailto:admissions@goyomixed.sc.ke">admissions@goyomixed.sc.ke</a></li>
-          <li><a href="mailto:hr@goyomixed.sc.ke">hr@goyomixed.sc.ke</a></li>
+          <li><a href="mailto:procurement@goyomixed.sc.ke">procurement@goyomixed.sc.ke</a></li>
           <li><a href="#careers">Job Vacancies</a></li>
           <li><a href="https://maps.google.com/?q=Goyo+Senior+School+Homa+Bay" target="_blank" rel="noopener">Google Maps →</a></li>
         </ul>
@@ -1859,75 +2004,112 @@
       <span>© 2026 Goyo Senior School &mdash; Homa Bay County, Kenya. All rights reserved.</span>
       <div class="footer-official">
         <span class="official-dot" aria-hidden="true"></span>
-        <span>Official school website &mdash; No data is stored on this website.</span>
+        <span>Official school website &mdash; No data stored on this site.</span>
         <span class="ts-sep">&nbsp;|&nbsp;</span>
-        <button onclick="document.getElementById('privacyModal').classList.add('open')" style="background:none;border:none;color:var(--sky-lt);font-size:0.76rem;cursor:pointer;text-decoration:underline;" aria-label="Read Privacy Policy">Privacy Policy</button>
+        <button onclick="document.getElementById('privacyModal').classList.add('open')" style="background:none;border:none;color:var(--sky-lt);font-size:0.76rem;cursor:pointer;text-decoration:underline;">Privacy Policy</button>
         <span class="ts-sep">&nbsp;|&nbsp;</span>
-        <button onclick="document.getElementById('disclaimerModal').classList.add('open')" style="background:none;border:none;color:var(--sky-lt);font-size:0.76rem;cursor:pointer;text-decoration:underline;" aria-label="Read Disclaimer">Disclaimer</button>
+        <button onclick="document.getElementById('disclaimerModal').classList.add('open')" style="background:none;border:none;color:var(--sky-lt);font-size:0.76rem;cursor:pointer;text-decoration:underline;">Disclaimer</button>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- ════════════════════════════════════
-     PRIVACY POLICY MODAL
-════════════════════════════════════ -->
+<!-- PRIVACY MODAL -->
 <div id="privacyModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
   <div class="modal-box">
-    <button class="modal-close" onclick="document.getElementById('privacyModal').classList.remove('open')" aria-label="Close Privacy Policy"><i class="fas fa-times" aria-hidden="true"></i></button>
-    <div class="no-data-badge"><i class="fas fa-shield-check" aria-hidden="true"></i> No Data Stored on This Website</div>
+    <button class="modal-close" onclick="document.getElementById('privacyModal').classList.remove('open')" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="no-data-badge"><i class="fas fa-shield-check"></i> No Data Stored on This Website</div>
     <h2 id="privacyTitle">Privacy Policy</h2>
     <p><strong>Effective Date: January 2026 &nbsp;|&nbsp; Goyo Senior School, Homa Bay County, Kenya</strong></p>
-    <p>This Privacy Policy explains how Goyo Senior School ("the School") handles information in relation to this website. We are committed to transparency and the protection of all visitors' privacy.</p>
-    <h4>1. Information We Do Not Collect</h4>
-    <p>This website is a static information site with no backend database. We do <strong>not</strong> collect, store, or process any personal data through this website. There are no online forms that store submissions. Any communication initiated (email, phone, WhatsApp) is handled directly between you and the School.</p>
-    <h4>2. Contact Communications</h4>
-    <p>When you click a mailto link or WhatsApp link on this site, your email client or messaging application opens on your own device. The School receives your message through that external communication channel, not through this website. The School's use of such communications is governed by Kenyan data protection law.</p>
-    <h4>3. External Links</h4>
-    <p>This site links to Google Maps and WhatsApp. These third-party services have their own privacy policies. We encourage you to review them. We are not responsible for the privacy practices of third-party websites.</p>
-    <h4>4. Cookies</h4>
-    <p>This website does not use cookies, tracking pixels, or any analytics software that collects personal data.</p>
-    <h4>5. Security</h4>
-    <p>This website is served over HTTPS (SSL encryption). We do not expose any admin panels and do not run insecure external scripts.</p>
-    <h4>6. Contact</h4>
-    <p>For privacy questions, contact: <a href="mailto:info@goyomixed.sc.ke">info@goyomixed.sc.ke</a> &nbsp;|&nbsp; P.O Box 435-40300, Homa Bay.</p>
+    <p>This website is a static information site with no backend database. We do <strong>not</strong> collect, store, or process any personal data through this website. Contact initiated via email, phone, or WhatsApp links is handled directly between you and the School through those external platforms.</p>
+    <h4>Cookies</h4><p>This website does not use cookies, tracking pixels, or analytics software that collects personal data.</p>
+    <h4>External Links</h4><p>Links to Google Maps and WhatsApp are governed by those services' own privacy policies.</p>
+    <h4>Contact</h4><p>For privacy questions: <a href="mailto:info@goyomixed.sc.ke">info@goyomixed.sc.ke</a></p>
   </div>
 </div>
 
-<!-- ════════════════════════════════════
-     DISCLAIMER MODAL
-════════════════════════════════════ -->
+<!-- DISCLAIMER MODAL -->
 <div id="disclaimerModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="disclaimerTitle">
   <div class="modal-box">
-    <button class="modal-close" onclick="document.getElementById('disclaimerModal').classList.remove('open')" aria-label="Close Disclaimer"><i class="fas fa-times" aria-hidden="true"></i></button>
+    <button class="modal-close" onclick="document.getElementById('disclaimerModal').classList.remove('open')" aria-label="Close"><i class="fas fa-times"></i></button>
     <h2 id="disclaimerTitle">Website Disclaimer</h2>
-    <p><strong>Goyo Senior School — Official Information and Communication Platform</strong></p>
     <ul>
-      <li>This website is the official information platform of Goyo Senior School, Homa Bay County, Kenya.</li>
+      <li>This is the official information platform of Goyo Senior School, Homa Bay County, Kenya.</li>
       <li><strong>No data is stored on this website.</strong> This is a static site with no database or backend server.</li>
-      <li>Fee structures, calendars, and other details are subject to change. Always confirm current information by contacting the school directly.</li>
-      <li>This website does <strong>not</strong> include: a student portal, online results system, automated admissions processing, or fee tracking. These services, if available, are provided through official government portals.</li>
-      <li>All academic claims (pass rates, awards, rankings) reflect the school's best available information at time of publication.</li>
-      <li>Goyo Senior School operates in compliance with Kenya's Ministry of Education regulations, the TSC, and KNEC requirements.</li>
+      <li>Fee structures, calendars, tender details, and other information are subject to change. Always confirm with the school directly.</li>
+      <li>All tender notices are for information purposes. The school reserves the right to cancel or reject any tender without obligation.</li>
+      <li>Goyo Senior School operates in compliance with Kenya's Ministry of Education, TSC, KNEC, and PPADA 2015 requirements.</li>
     </ul>
   </div>
 </div>
 
 <!-- SCROLL TO TOP -->
-<button id="scrollTop" aria-label="Scroll back to top of page"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+<button id="scrollTop" aria-label="Scroll back to top"><i class="fas fa-chevron-up"></i></button>
 
 <script>
-  /* ── Mobile nav toggle ── */
+  /* ── Gallery data ── */
+  const galleryImages = [
+    { src: 'girlshandballteam.jpg',           alt: 'Goyo Senior School girls handball team competing in a county tournament',                        caption: 'Girls Handball Team' },
+    { src: 'boyshandballteam.jpg',            alt: 'Goyo Senior School boys handball team in action during a match',                                  caption: 'Boys Handball Team' },
+    { src: 'goyo-team.jpg',                   alt: 'Goyo Senior School team group photograph',                                                        caption: 'Goyo School Team' },
+    { src: 'ramogi-dance.jpg',                alt: 'Students performing the traditional Ramogi cultural dance at a school event',                     caption: 'Ramogi Cultural Dance' },
+    { src: 'maintaining-clean-environment.JPG', alt: 'Goyo Senior School students taking part in a clean environment campaign on school grounds',    caption: 'Clean Environment Campaign' },
+    { src: 'principal-appreciation-day.JPG',  alt: 'Students and staff during the Principal Appreciation Day ceremony at Goyo Senior School',        caption: 'Principal Appreciation Day' },
+    { src: 'teachers-retreat.jpg',            alt: 'Goyo Senior School teaching staff during a professional development retreat',                     caption: 'Teachers\' Retreat' },
+    { src: 'school-gate.jpg',                 alt: 'Main entrance gate of Goyo Senior School along the Homa Bay–Mbita Superhighway',                 caption: 'Main Entrance Gate' },
+  ];
+
+  let currentLightboxIndex = 0;
+
+  function openLightbox(index) {
+    currentLightboxIndex = index;
+    updateLightbox();
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('lightboxClose').focus();
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function updateLightbox() {
+    const img = galleryImages[currentLightboxIndex];
+    const el  = document.getElementById('lightboxImg');
+    el.src = img.src;
+    el.alt = img.alt;
+    document.getElementById('lightboxCaption').textContent = img.caption + ' (' + (currentLightboxIndex + 1) + ' / ' + galleryImages.length + ')';
+  }
+
+  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+  document.getElementById('lightboxPrev').addEventListener('click', () => {
+    currentLightboxIndex = (currentLightboxIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateLightbox();
+  });
+  document.getElementById('lightboxNext').addEventListener('click', () => {
+    currentLightboxIndex = (currentLightboxIndex + 1) % galleryImages.length;
+    updateLightbox();
+  });
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (!document.getElementById('lightbox').classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft')  { currentLightboxIndex = (currentLightboxIndex - 1 + galleryImages.length) % galleryImages.length; updateLightbox(); }
+    if (e.key === 'ArrowRight') { currentLightboxIndex = (currentLightboxIndex + 1) % galleryImages.length; updateLightbox(); }
+  });
+
+  /* ── Mobile nav ── */
   const hamburger = document.getElementById('hamburger');
   const navLinks  = document.getElementById('navLinks');
   const hamIcon   = document.getElementById('hamburgerIcon');
-
   hamburger.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
     hamIcon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
     hamburger.setAttribute('aria-expanded', isOpen.toString());
   });
-
   navLinks.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
       navLinks.classList.remove('open');
@@ -1944,20 +2126,17 @@
       const target = document.querySelector(hash);
       if (target) {
         e.preventDefault();
-        const offset = 72;
-        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 72, behavior: 'smooth' });
       }
     });
   });
 
-  /* ── Scroll to top button ── */
+  /* ── Scroll to top ── */
   const scrollBtn = document.getElementById('scrollTop');
-  window.addEventListener('scroll', () => {
-    scrollBtn.classList.toggle('visible', window.scrollY > 450);
-  }, { passive: true });
+  window.addEventListener('scroll', () => scrollBtn.classList.toggle('visible', window.scrollY > 450), { passive: true });
   scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-  /* ── Active nav highlight on scroll ── */
+  /* ── Active nav on scroll ── */
   const sections = document.querySelectorAll('section[id], header[id]');
   const navAs    = document.querySelectorAll('.nav-links a[href^="#"]');
   const io = new IntersectionObserver(entries => {
@@ -1987,16 +2166,11 @@
     });
   });
 
-  /* ── Modal close on overlay click ── */
+  /* ── Modal overlay close ── */
   document.querySelectorAll('.modal-overlay').forEach(overlay => {
-    overlay.addEventListener('click', e => {
-      if (e.target === overlay) overlay.classList.remove('open');
-    });
-    overlay.addEventListener('keydown', e => {
-      if (e.key === 'Escape') overlay.classList.remove('open');
-    });
+    overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
+    overlay.addEventListener('keydown', e => { if (e.key === 'Escape') overlay.classList.remove('open'); });
   });
 </script>
-
 </body>
 </html>
