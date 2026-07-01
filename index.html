@@ -869,6 +869,106 @@
     .map-placeholder a { font-size: 0.82rem; font-weight: 600; color: var(--teal); text-decoration: underline; }
     .map-placeholder a:hover { color: var(--navy); }
 
+    /* ═══ SPONSOR STRIP ═══ */
+    .sponsor-strip {
+      background: linear-gradient(90deg, var(--navy), var(--teal), var(--navy));
+      background-size: 200% 100%;
+      animation: sponsorShift 8s ease infinite;
+      color: white; text-align: center;
+      font-size: 0.82rem; font-weight: 600;
+      padding: 0.55rem 1rem; letter-spacing: 0.02em;
+    }
+    .sponsor-strip i { color: var(--gold); margin-right: 0.5rem; }
+    @keyframes sponsorShift { 0%,100%{background-position:0% 50%;} 50%{background-position:100% 50%;} }
+
+    /* ═══ SPONSOR & CHAPLAINCY HISTORY ═══ */
+    #sponsor-history { background: var(--gray-50); }
+    .sponsor-callout {
+      background: linear-gradient(135deg, var(--navy), var(--teal)); color: white;
+      border-radius: var(--radius-lg); padding: 2rem; text-align: center; margin-bottom: 2.5rem;
+      position: relative; overflow: hidden;
+    }
+    .sponsor-callout::after {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.14), transparent 60%);
+    }
+    .sponsor-callout i.callout-icon { display: block; font-size: 1.8rem; color: var(--gold); margin-bottom: 0.75rem; position: relative; }
+    .sponsor-callout h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 0.5rem; position: relative; }
+    .sponsor-callout p { font-size: 0.9rem; color: rgba(255,255,255,0.82); max-width: 560px; margin: 0 auto; position: relative; line-height: 1.65; }
+    .history-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .history-card {
+      position: relative; background: white; border-radius: var(--radius-lg);
+      padding: 1.75rem; overflow: hidden; text-align: center;
+      border: 1px solid var(--gray-100);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+    .history-card::before {
+      content: ''; position: absolute; inset: -2px;
+      background: conic-gradient(from 0deg, var(--gold), var(--teal), var(--sky), var(--gold));
+      opacity: 0; transition: opacity 0.35s ease;
+      z-index: 0; animation: spin 5s linear infinite paused;
+    }
+    .history-card:hover::before { opacity: 0.16; animation-play-state: running; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .history-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .history-card-inner { position: relative; z-index: 1; background: white; border-radius: calc(var(--radius-lg) - 2px); padding: 0.25rem; }
+    .history-avatar {
+      width: 78px; height: 78px; border-radius: 50%; margin: 0 auto 1rem;
+      background: linear-gradient(135deg, var(--mist), var(--sky-lt));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; color: var(--teal);
+      border: 3px solid rgba(240,165,0,0.4);
+    }
+    .history-card h4 { font-weight: 700; font-size: 1rem; color: var(--navy); margin-bottom: 0.2rem; }
+    .history-role { font-size: 0.78rem; color: var(--teal); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem; }
+    .history-years {
+      display: inline-block; background: var(--gold-lt); color: #8a6000;
+      font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.75rem; border-radius: 40px;
+      margin-bottom: 0.6rem;
+    }
+    .history-card p.desc { font-size: 0.82rem; color: var(--gray-700); line-height: 1.55; }
+
+    /* ═══ LEADER TENURE BADGE ═══ */
+    .leader-tenure {
+      display: inline-block; margin-top: 0.5rem;
+      font-size: 0.72rem; color: #8a6000; font-weight: 700;
+      background: var(--gold-lt); padding: 0.15rem 0.6rem; border-radius: 40px;
+    }
+
+    /* ═══ CORE VALUES ═══ */
+    #core-values { background: var(--navy); color: white; overflow: hidden; }
+    #core-values .section-title { color: white; }
+    #core-values .section-lead { color: rgba(255,255,255,0.65); }
+    #core-values .section-label { color: var(--sky); }
+    .value-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1.25rem; margin-top: 2.5rem; }
+    .value-card {
+      position: relative; background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-lg);
+      padding: 1.75rem 1.25rem; text-align: center; overflow: hidden;
+      transition: transform 0.4s ease, background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    }
+    .value-card::before {
+      content: ''; position: absolute; top: -50%; left: -60%;
+      width: 220%; height: 220%;
+      background: linear-gradient(115deg, transparent 40%, rgba(255,255,255,0.18) 50%, transparent 60%);
+      transform: translateX(-100%); transition: transform 0.9s ease;
+      pointer-events: none;
+    }
+    .value-card:hover::before { transform: translateX(30%); }
+    .value-card:hover { transform: translateY(-8px) scale(1.03); background: rgba(255,255,255,0.09); border-color: var(--gold); box-shadow: 0 18px 40px rgba(0,0,0,0.35); }
+    .value-num {
+      width: 46px; height: 46px; border-radius: 50%; margin: 0 auto 1rem;
+      background: linear-gradient(135deg, var(--gold), #d99600);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.1rem;
+      color: var(--navy); position: relative; z-index: 1;
+      box-shadow: 0 4px 14px rgba(240,165,0,0.4);
+      transition: transform 0.4s ease;
+    }
+    .value-card:hover .value-num { transform: rotate(360deg); }
+    .value-card h4 { position: relative; z-index: 1; font-size: 0.98rem; font-weight: 700; margin-bottom: 0.4rem; color: white; }
+    .value-card p { position: relative; z-index: 1; font-size: 0.8rem; color: rgba(255,255,255,0.6); line-height: 1.5; }
+
     /* ═══ MODALS ═══ */
     .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(11,42,60,0.75); z-index: 1000; align-items: center; justify-content: center; padding: 1.5rem; }
     .modal-overlay.open { display: flex; }
@@ -956,7 +1056,7 @@
       .gallery-grid { grid-template-columns: 1fr; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .ticker-track, .gallery-strip { animation: none; }
+      .ticker-track, .gallery-strip, .sponsor-strip, .history-card::before, .value-card::before, .value-card:hover .value-num { animation: none; }
       *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
     }
     :focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
@@ -983,6 +1083,11 @@
       <a href="https://wa.me/254718812493?text=Hello%20Goyo%20Senior%20School%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i>WhatsApp</a>
     </div>
   </div>
+</div>
+
+<!-- ═══════════ SPONSOR STRIP ═══════════ -->
+<div class="sponsor-strip" role="complementary" aria-label="School sponsor">
+  <i class="fas fa-cross" aria-hidden="true"></i>Proudly sponsored by the Catholic Diocese of Goyo
 </div>
 
 <!-- ═══════════ NAVBAR ═══════════ -->
@@ -1105,6 +1210,8 @@
       <a href="#tenders" class="qlink"><i class="fas fa-file-contract" aria-hidden="true"></i> Tenders</a>
       <a href="#admissions" class="qlink"><i class="fas fa-file-alt" aria-hidden="true"></i> Admissions</a>
       <a href="#bell-schedule" class="qlink"><i class="fas fa-bell" aria-hidden="true"></i> Bell Schedule</a>
+      <a href="#sponsor-history" class="qlink"><i class="fas fa-church" aria-hidden="true"></i> Sponsor &amp; Chaplaincy</a>
+      <a href="#core-values" class="qlink"><i class="fas fa-gem" aria-hidden="true"></i> Core Values</a>
       <a href="https://wa.me/254718812493?text=Hello%20Goyo%20Senior%20School%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" class="qlink"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us</a>
     </div>
   </div>
@@ -1140,10 +1247,47 @@
         <p>Welcome to Goyo Senior School — a centre of academic excellence and character formation situated in the heart of Homa Bay County. Since our founding in 2015, we have remained steadfast in our mission to produce well-rounded graduates prepared not only for KCSE success, but for the demands of university, professional life, and citizenship.</p>
         <p>As we navigate the transition from the 8-4-4 curriculum to the Competency-Based Curriculum (CBC), our school is fully prepared. Our teachers have been trained, our pathways are structured, and our commitment to every learner's growth remains unwavering.</p>
         <p>I invite you to engage with us, visit our school, and join our community. Together, we can build futures.</p>
+        <div class="cal-note" role="note" style="margin-top:1.25rem;">
+          <i class="fas fa-info-circle"></i> <strong>Our Principals:</strong> Mr. Mathew Ongondo led the school as founding Principal from 2015 until his retirement in 2020. Mr. Wellingtone Ngesa has served as Principal from 2020 to date.
+        </div>
         <div class="principal-sig">
           <strong>Mr. Wellingtone Ngesa</strong>
           <span>Principal, Goyo Senior School</span>
           <span style="font-size:0.78rem; color:var(--gray-400);">Ref: GSS/PRINCIPAL/2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SPONSOR & CHAPLAINCY HISTORY ═══ -->
+<section id="sponsor-history" aria-labelledby="sponsor-history-heading">
+  <div class="container">
+    <div class="sponsor-callout">
+      <i class="fas fa-church callout-icon" aria-hidden="true"></i>
+      <h3>Sponsored by the Catholic Diocese of Goyo</h3>
+      <p>Goyo Senior School is proudly sponsored by the Catholic Diocese of Goyo, whose guidance and pastoral support have shaped our institution's values of faith, discipline, and service since our founding in 2015.</p>
+    </div>
+    <span class="section-label">Our Chaplaincy</span>
+    <h2 id="sponsor-history-heading" class="section-title">Spiritual Leadership Through the Years</h2>
+    <p class="section-lead">The Catholic Diocese of Goyo has appointed dedicated chaplains to guide the spiritual and moral life of our school community.</p>
+    <div class="history-grid">
+      <div class="history-card">
+        <div class="history-card-inner">
+          <div class="history-avatar"><i class="fas fa-cross"></i></div>
+          <h4>Father Joseph Oronjo</h4>
+          <div class="history-role">Founding Chaplain</div>
+          <div class="history-years">2015 – 2024</div>
+          <p class="desc">Served as the school's founding chaplain, laying the spiritual foundation of Goyo Senior School from its establishment in 2015.</p>
+        </div>
+      </div>
+      <div class="history-card">
+        <div class="history-card-inner">
+          <div class="history-avatar"><i class="fas fa-cross"></i></div>
+          <h4>Father Dominic Otieno</h4>
+          <div class="history-role">Current Chaplain</div>
+          <div class="history-years">2024 – Present</div>
+          <p class="desc">Continues the Diocese's pastoral mission, offering spiritual guidance and mentorship to students and staff today.</p>
         </div>
       </div>
     </div>
@@ -1194,6 +1338,42 @@
   </div>
 </section>
 
+<!-- ═══ CORE VALUES ═══ -->
+<section id="core-values" aria-labelledby="core-values-heading">
+  <div class="container">
+    <span class="section-label">What Drives Us</span>
+    <h2 id="core-values-heading" class="section-title">Our Core Values</h2>
+    <p class="section-lead">Five guiding principles shape every decision, lesson, and relationship at Goyo Senior School.</p>
+    <div class="value-grid">
+      <div class="value-card">
+        <div class="value-num">1</div>
+        <h4>Professionalism</h4>
+        <p>Upholding the highest standards of conduct and excellence in all we do.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">2</div>
+        <h4>Openness</h4>
+        <p>Fostering transparent communication and honest relationships.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">3</div>
+        <h4>Discipline</h4>
+        <p>Cultivating self-control, order, and respect within our community.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">4</div>
+        <h4>Teamwork</h4>
+        <p>Working together to achieve shared goals and support one another.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">5</div>
+        <h4>Integrity</h4>
+        <p>Acting with honesty and strong moral principles at all times.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══ LEADERSHIP ═══ -->
 <section id="leadership" aria-labelledby="leadership-heading" style="background:var(--gray-50);">
   <div class="container">
@@ -1208,6 +1388,28 @@
         <h4>Mr. Wellingtone Ngesa</h4>
         <div class="role">Principal</div>
         <div class="quals">Education Management</div>
+        <div class="leader-tenure">2020 – Present</div>
+      </div>
+      <div class="leader-card">
+        <div class="leader-avatar"><i class="fas fa-user-tie"></i></div>
+        <h4>Mr. Mathew Ongondo</h4>
+        <div class="role">Founding Principal (Retired)</div>
+        <div class="quals">Education Management</div>
+        <div class="leader-tenure">2015 – 2020</div>
+      </div>
+      <div class="leader-card">
+        <div class="leader-avatar"><i class="fas fa-landmark"></i></div>
+        <h4>Tom Odundo</h4>
+        <div class="role">Board Chairperson</div>
+        <div class="quals">School Governance</div>
+        <div class="leader-tenure">Current</div>
+      </div>
+      <div class="leader-card">
+        <div class="leader-avatar"><i class="fas fa-landmark"></i></div>
+        <h4>Joseph Ojwang</h4>
+        <div class="role">Former Board Chairperson</div>
+        <div class="quals">School Governance</div>
+        <div class="leader-tenure">Past Tenure</div>
       </div>
       <div class="leader-card">
         <div class="leader-avatar"><i class="fas fa-user-tie"></i></div>
@@ -1957,7 +2159,7 @@
             <span>School &middot; Homa Bay</span>
           </div>
         </a>
-        <p>Established 2015. A co-educational public day school in Homa Bay County offering CBC Grade 10 and KCSE Form 3–4 education. Committed to excellence, integrity, and service.</p>
+        <p>Established 2015. A co-educational public day school in Homa Bay County offering CBC Grade 10 and KCSE Form 3–4 education. Sponsored by the Catholic Diocese of Goyo. Committed to excellence, integrity, and service.</p>
         <div class="footer-motto">"Excellence, Integrity, Service"</div>
         <div class="footer-social" aria-label="Social media links">
           <a href="#" class="social-btn" aria-label="Facebook page"><i class="fab fa-facebook-f"></i></a>
@@ -1971,6 +2173,8 @@
         <ul>
           <li><a href="#about">About Us</a></li>
           <li><a href="#leadership">Leadership</a></li>
+          <li><a href="#sponsor-history">Sponsor &amp; Chaplaincy</a></li>
+          <li><a href="#core-values">Core Values</a></li>
           <li><a href="#departments">Departments</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#calendar">Academic Calendar</a></li>
@@ -2001,7 +2205,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Goyo Senior School &mdash; Homa Bay County, Kenya. All rights reserved.</span>
+      <span>© 2026 Goyo Senior School &mdash; Homa Bay County, Kenya. Sponsored by the Catholic Diocese of Goyo. All rights reserved.</span>
       <div class="footer-official">
         <span class="official-dot" aria-hidden="true"></span>
         <span>Official school website &mdash; No data stored on this site.</span>
